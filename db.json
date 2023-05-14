@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1001,
+      "name": "Apple MacBook Pro 16-inch",
+      "type": "laptop",
+      "brand": "Apple",
+      "price": 2399.0
+    },
+    {
+      "id": 1002,
+      "name": "Dell XPS 13",
+      "type": "laptop",
+      "brand": "Dell",
+      "price": 1399.99
+    },
+    {
+      "id": 1003,
+      "name": "HP Spectre x360",
+      "type": "laptop",
+      "brand": "HP",
+      "price": 1299.99
+    },
+    {
+      "id": 2001,
+      "name": "Canon EOS R6 Mirrorless Camera",
+      "type": "camera",
+      "brand": "Canon",
+      "price": 2499.0
+    },
+    {
+      "id": 2002,
+      "name": "Sony Alpha a7 III Mirrorless Camera",
+      "type": "camera",
+      "brand": "Sony",
+      "price": 1999.99
+    },
+    {
+      "id": 2003,
+      "name": "Panasonic Lumix GH5 Mirrorless Camera",
+      "type": "camera",
+      "brand": "Panasonic",
+      "price": 1997.99
+    },
+    {
+      "id": 3001,
+      "name": "Nikon AF-S FX NIKKOR 24-70mm f/2.8E ED VR Lens",
+      "type": "lens",
+      "brand": "Nikon",
+      "price": 2399.0
+    },
+    {
+      "id": 3002,
+      "name": "Fujifilm XF 56mm f/1.2 R Lens",
+      "type": "lens",
+      "brand": "Fujifilm",
+      "price": 999.0
+    },
+    {
+      "id": 3003,
+      "name": "Sigma 35mm f/1.4 DG HSM Art Lens for Canon EF",
+      "type": "lens",
+      "brand": "Sigma",
+      "price": 899.0
+    },
+    {
+      "id": 2004,
+      "name": "Nikon D850 DSLR Camera",
+      "type": "camera",
+      "brand": "Nikon",
+      "price": 3299.99
+    }
+  ]
+}
