@@ -1,7 +1,7 @@
 import { CiShoppingCart, CiUser } from "react-icons/ci";
 function Navigation() {
   return (
-    <nav className="bg-slate-200  p-12  w-auto">
+    <nav className="bg-slate-200  p-12  w-auto sticky top-0 z-50 ">
       <section className="flex items-center justify-between mx-28">
         <h2 className="font-extrabold  text-transparent text-4xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 cursor-pointer">
           LOGO
