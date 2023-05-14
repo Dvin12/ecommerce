@@ -8,7 +8,7 @@ function Navigation() {
         </h2>
         <ul className="flex gap-10 text-lg tracking-wide text-slate-800 ">
           <li className="cursor-pointer hover:text-indigo-600 duration-300">
-            Product
+            Products
           </li>
           <li className="cursor-pointer hover:text-indigo-600 duration-300">
             Explore
@@ -17,7 +17,7 @@ function Navigation() {
             Support
           </li>
           <li className="cursor-pointer hover:text-indigo-600 duration-300">
-            Business
+            About Us
           </li>
         </ul>
         <div>

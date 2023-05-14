@@ -1,3 +1,5 @@
+import { camera_header, laptop_header, lens_header } from "../assets/images";
+
 function Header() {
   return (
     <header className="bg-slate-200 p-12 h-screen">
@@ -9,7 +11,7 @@ function Header() {
             </h1>
           </div>
           <div className="flex gap-8 my-14">
-            <button className=" bg-indigo-500 py-5 px-11 rounded-lg text-white font-medium text-xl tracking-wider hover:bg-indigo-600 transition-all duration-300">
+            <button className=" bg-indigo-500 py-5 px-11 rounded-lg text-white font-medium text-xl tracking-wider hover:bg-indigo-600 transition-all duration-300 shadow-md">
               Buy Now
             </button>
             <button className=" text-gray-600 font-semibold text-md  underline decoration-2 underline-offset-[6px] hover:text-gray-900 duration-300">
@@ -20,15 +22,15 @@ function Header() {
         <article className="flex relative w-full items-center justify-center">
           <img
             className="w-96 h-96 absolute z-10 left-14 top-[-140px] drop-shadow-2xl"
-            src="./assets/camera_header.png"
+            src={camera_header}
           ></img>
           <img
             className="w-96 h-96 absolute drop-shadow-2xl"
-            src="./assets/laptop_header.png"
+            src={laptop_header}
           ></img>
           <img
             className="w-96 h-96 absolute right-5 drop-shadow-2xl"
-            src="./assets/lens_header.png"
+            src={lens_header}
           ></img>
         </article>
       </section>
