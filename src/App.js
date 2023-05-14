@@ -7,6 +7,7 @@ import {
 import Navigation from "./component/Navigation";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import { productData } from "./api/Api";
 
 const Layout = () => {
   return (
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: productData,
       },
       {
         path: "/cart",

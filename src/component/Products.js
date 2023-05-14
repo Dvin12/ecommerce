@@ -1,8 +1,8 @@
 import ProductsCard from "./ProductsCard";
 
-function Products() {
+function Products({ products }) {
   return (
-    <section className="bg-gray-900 p-12 h-screen ">
+    <section className="bg-gray-900 p-12 h-full ">
       <div className="mx-28">
         <div className="flex flex-col justify-center items-center ">
           <h2 className="text-gray-100 text-6xl  mt-12 font-medium  tracking-wide">
@@ -17,11 +17,11 @@ function Products() {
             perfect product for you at competitive prices.
           </p>
         </div>
-        <article>
-          <ProductsCard></ProductsCard>
-          <ProductsCard></ProductsCard>
-          <ProductsCard></ProductsCard>
-        </article>
+        <section className="my-28 grid grid-cols-3 gap-14">
+          {products.map((item) => (
+            <ProductsCard key={item.id} product={item}></ProductsCard>
+          ))}
+        </section>
       </div>
     </section>
   );

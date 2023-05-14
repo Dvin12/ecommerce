@@ -42,6 +42,7 @@
       "brand": "Panasonic",
       "price": 1997.99
     },
+
     {
       "id": 3001,
       "name": "Nikon AF-S FX NIKKOR 24-70mm f/2.8E ED VR Lens",
@@ -62,13 +63,6 @@
       "type": "lens",
       "brand": "Sigma",
       "price": 899.0
-    },
-    {
-      "id": 2004,
-      "name": "Nikon D850 DSLR Camera",
-      "type": "camera",
-      "brand": "Nikon",
-      "price": 3299.99
     }
   ]
 }
