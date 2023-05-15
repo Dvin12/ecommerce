@@ -81,7 +81,7 @@ function Product() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light"
+        theme="dark"
       ></ToastContainer>
     </div>
   );

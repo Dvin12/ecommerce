@@ -30,7 +30,9 @@ function Navigation() {
         </ul>
         <div>
           <span className="flex gap-4 text-4xl relative">
-            <CiShoppingCart className="cursor-pointer "></CiShoppingCart>
+            <Link to="/cart">
+              <CiShoppingCart className="cursor-pointer "></CiShoppingCart>
+            </Link>
             <span className="bg-indigo-400 rounded-full w-5 h-5 text-base absolute left-5 text-center text-white">
               {productData.length}
             </span>
