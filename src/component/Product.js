@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/storeSlice";
+import { ToastContainer, toast } from "react-toastify";
 
 function Product() {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ function Product() {
         quantity: baseQnty,
         description: details.description,
       })
-    );
+    ) && toast.success(`${details.name} is added to the cart!`);
   };
 
   return (
@@ -70,6 +71,18 @@ function Product() {
           </div>
         </section>
       </article>
+      <ToastContainer
+        position="top-left"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      ></ToastContainer>
     </div>
   );
 }
