@@ -1,11 +1,16 @@
 import { CiShoppingCart, CiUser } from "react-icons/ci";
+import { Link } from "react-router-dom";
+
 function Navigation() {
   return (
     <nav className="bg-slate-200  p-12  w-auto sticky top-0 z-50 ">
       <section className="flex items-center justify-between mx-28">
-        <h2 className="font-extrabold  text-transparent text-4xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 cursor-pointer">
+        <Link
+          to="/"
+          className="font-extrabold  text-transparent text-4xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 cursor-pointer"
+        >
           LOGO
-        </h2>
+        </Link>
         <ul className="flex gap-10 text-lg tracking-wide text-slate-800 ">
           <li className="cursor-pointer hover:text-indigo-600 duration-300">
             Products
