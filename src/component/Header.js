@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { camera_header, laptop_header, lens_header } from "../assets/images";
 
 function Header() {

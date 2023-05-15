@@ -1,7 +1,10 @@
 import { CiShoppingCart, CiUser } from "react-icons/ci";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Navigation() {
+  const productData = useSelector((state) => state.store.productData);
+  console.log(productData);
   return (
     <nav className="bg-slate-200  p-12  w-auto sticky top-0 z-50 ">
       <section className="flex items-center justify-between mx-28">
@@ -26,8 +29,11 @@ function Navigation() {
           </li>
         </ul>
         <div>
-          <span className="flex gap-4 text-4xl">
-            <CiShoppingCart className="cursor-pointer"></CiShoppingCart>
+          <span className="flex gap-4 text-4xl relative">
+            <CiShoppingCart className="cursor-pointer "></CiShoppingCart>
+            <span className="bg-indigo-400 rounded-full w-5 h-5 text-base absolute left-5 text-center text-white">
+              {productData.length}
+            </span>
             <CiUser className="cursor-pointer"></CiUser>
           </span>
         </div>

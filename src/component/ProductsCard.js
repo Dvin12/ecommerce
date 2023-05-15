@@ -1,6 +1,9 @@
 import { CiShoppingCart } from "react-icons/ci";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { addToCart } from "../redux/storeSlice";
 function ProductsCard({ product }) {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const id = product.name;
   const idString = (id) => {
@@ -17,7 +20,17 @@ function ProductsCard({ product }) {
 
   const handleButtonClick = (e) => {
     e.stopPropagation();
-    return console.log("Button clicked!");
+    dispatch(
+      addToCart({
+        id: product.id,
+        name: product.name,
+        brand: product.brand,
+        price: product.price,
+        image: product.image,
+        quantity: 1,
+        description: product.description,
+      })
+    );
   };
   return (
     <article
