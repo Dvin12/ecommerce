@@ -17,7 +17,7 @@ function Products({ products }) {
             perfect product for you at competitive prices.
           </p>
         </div>
-        <section className="my-28 grid grid-cols-3 gap-14">
+        <section className="my-28 grid grid-cols-3 gap-14 ">
           {products.map((item) => (
             <ProductsCard key={item.id} product={item}></ProductsCard>
           ))}

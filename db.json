@@ -5,6 +5,7 @@
       "name": "Apple MacBook Pro 16-inch",
       "type": "laptop",
       "brand": "Apple",
+      "image": "/assets/images/Macbook.png",
       "price": 2399.0
     },
     {
@@ -12,6 +13,7 @@
       "name": "Dell XPS 13",
       "type": "laptop",
       "brand": "Dell",
+      "image": "/assets/images/DellXps.png",
       "price": 1399.99
     },
     {
@@ -19,49 +21,56 @@
       "name": "HP Spectre x360",
       "type": "laptop",
       "brand": "HP",
+      "image": "/assets/images/HpSpectre.png",
       "price": 1299.99
     },
     {
       "id": 2001,
-      "name": "Canon EOS R6 Mirrorless Camera",
+      "name": "Canon EOS R6",
       "type": "camera",
       "brand": "Canon",
+      "image": "/assets/images/EOSR6.png",
       "price": 2499.0
     },
     {
       "id": 2002,
-      "name": "Sony Alpha a7 III Mirrorless Camera",
+      "name": "Sony Alpha a7 III",
       "type": "camera",
       "brand": "Sony",
+      "image": "/assets/images/Alphaa7.png",
       "price": 1999.99
     },
     {
       "id": 2003,
-      "name": "Panasonic Lumix GH5 Mirrorless Camera",
+      "name": "Panasonic Lumix GH5 ",
       "type": "camera",
       "brand": "Panasonic",
+      "image": "/assets/images/LumixGH5.png",
       "price": 1997.99
     },
 
     {
       "id": 3001,
-      "name": "Nikon AF-S FX NIKKOR 24-70mm f/2.8E ED VR Lens",
+      "name": "Nikon AF-S FX NIKKOR 24-70mm",
       "type": "lens",
       "brand": "Nikon",
+      "image": "/assets/images/NIKKOR24-70mm.png",
       "price": 2399.0
     },
     {
       "id": 3002,
-      "name": "Fujifilm XF 56mm f/1.2 R Lens",
+      "name": "Fujifilm XF 56mm  ",
       "type": "lens",
       "brand": "Fujifilm",
+      "image": "/assets/images/XF56mm.png",
       "price": 999.0
     },
     {
       "id": 3003,
-      "name": "Sigma 35mm f/1.4 DG HSM Art Lens for Canon EF",
+      "name": "Sigma 35mm f/1.4 DG HSM Art ",
       "type": "lens",
       "brand": "Sigma",
+      "image": "/assets/images/Sigma35mm.png",
       "price": 899.0
     }
   ]
