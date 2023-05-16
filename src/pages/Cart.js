@@ -2,10 +2,10 @@ import CartItem from "../component/CartItem";
 
 function Cart() {
   return (
-    <div className="bg-slate-200 h-screen">
-      <section className="flex items-center justify-center p-12 mx-28 py-20">
+    <div className="bg-slate-200 h-full ">
+      <section className="flex  justify-center  mx-20 py-20">
         <CartItem></CartItem>
-        <article className="bg-zinc-300 p-10 w-1/4  rounded-2xl  ">
+        <article className="bg-gray-100 p-10 w-1/4  rounded-2xl drop-shadow-lg">
           <div className=" flex justify-between items-center  border-b-[1px] border-b-gray-400 py-4 border-dashed">
             <h3 className="text-xl font-medium">Delivery</h3>
             <button className="bg-gray-200 p-2 w-16 rounded-lg drop-shadow-md">
@@ -13,26 +13,30 @@ function Cart() {
             </button>
           </div>
           <div className=" border-b-[1px] border-b-gray-400 py-4 border-dashed">
-            <div className="flex justify-between">
+            <div className="flex justify-between  text-gray-900 text-xl items-center">
               <h3>Subtotal</h3>
-              <h3>$80</h3>
+              <span>$80</span>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between py-2  text-gray-600">
               <h5>Delivery</h5>
-              <h5>Free</h5>
+              <span>Free</span>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between  text-gray-500">
               <h5>Tax</h5>
-              <h5>+$14.00</h5>
+              <span>+ $14.00</span>
             </div>
           </div>
-          <div className="flex justify-between">
-            <h3>Total</h3>
-            <h3>$94</h3>
+          <div className="flex justify-between py-4 text-xl">
+            <h3 className="text-gray-800">Total</h3>
+            <span className=" text-black font-medium">$94</span>
           </div>
-          <div className="flex flex-col w-full">
-            <button className="bg-indigo-400">Proceed to checkout</button>
-            <button className="bg-gray-200">Continue shopping</button>
+          <div className="flex flex-col w-full gap-2  ">
+            <button className="bg-indigo-500 p-2 rounded-lg drop-shadow-lg text-gray-100 text-lg font-medium hover:bg-indigo-600 duration-300">
+              Proceed to checkout
+            </button>
+            <button className="bg-gray-100 text-gray-900 p-2 rounded-lg text-lg font-medium drop-shadow-lg hover:bg-gray-200 duration-300">
+              Continue shopping
+            </button>
           </div>
         </article>
       </section>
