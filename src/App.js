@@ -9,6 +9,7 @@ import Product from "./component/Product";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import { productData } from "./api/Api";
+import Login from "./pages/Login";
 
 const Layout = () => {
   return (
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart></Cart>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
     ],
   },

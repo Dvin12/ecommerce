@@ -36,7 +36,9 @@ function Navigation() {
             <span className="bg-indigo-400 rounded-full w-5 h-5 text-base absolute left-5 text-center text-white">
               {productData.length}
             </span>
-            <CiUser className="cursor-pointer"></CiUser>
+            <Link to="/login">
+              <CiUser className="cursor-pointer"></CiUser>
+            </Link>
           </span>
         </div>
       </section>
