@@ -1,16 +1,18 @@
 import { useDispatch, useSelector } from "react-redux";
 import { FaTrash } from "react-icons/fa";
-import { deleteFromCart } from "../redux/storeSlice";
+import { deleteFromCart, resetCart } from "../redux/storeSlice";
 import { ToastContainer, toast } from "react-toastify";
+import { HiArrowNarrowLeft } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function CartItem() {
   const dispatch = useDispatch();
   const productData = useSelector((state) => state.store.productData);
 
   return (
-    <section className="w-2/3 pr-14 ">
+    <section className="w-2/3 pr-12 ">
       <div className="w-full bg-slate-100 rounded-xl p-12 drop-shadow-lg">
-        <div className="border-b-[2px] border-gray-300 py-4">
+        <div className="border-b-[2px] border-gray-300 py-4 overflow-auto">
           <h2 className="text-2xl font-medium">Cart</h2>
         </div>
         <div className="">
@@ -50,6 +52,18 @@ function CartItem() {
             </div>
           ))}
         </div>
+        <button
+          onClick={() => dispatch(resetCart([]))}
+          className="my-4 bg-gray-100 px-4 py-2 rounded-lg drop-shadow-lg"
+        >
+          Reset The Cart
+        </button>
+        <Link to="/">
+          <button className="flex items-center gap-1 text-gray-500 hover:text-gray-800 duration-300">
+            <HiArrowNarrowLeft></HiArrowNarrowLeft>
+            <span>Go Back</span>
+          </button>
+        </Link>
       </div>
       <ToastContainer
         position="top-left"

@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 function Cart() {
   return (
-    <div className="bg-slate-200 h-screen ">
+    <div className="bg-slate-200 h-screen">
       <section className="flex  justify-center  mx-20 py-20">
         <CartItem></CartItem>
         <article className="bg-gray-100 p-10 w-1/4  rounded-2xl drop-shadow-lg h-fit">
