@@ -31,6 +31,7 @@ function Product() {
         brand: details.brand,
         price: details.price,
         quantity: baseQnty,
+        image: details.image,
         description: details.description,
       })
     ) && toast.success(`${details.name} is added to the cart!`);
