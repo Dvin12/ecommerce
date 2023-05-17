@@ -1,11 +1,12 @@
 import CartItem from "../component/CartItem";
+import { ToastContainer, toast } from "react-toastify";
 
 function Cart() {
   return (
-    <div className="bg-slate-200 h-full ">
+    <div className="bg-slate-200 h-screen ">
       <section className="flex  justify-center  mx-20 py-20">
         <CartItem></CartItem>
-        <article className="bg-gray-100 p-10 w-1/4  rounded-2xl drop-shadow-lg">
+        <article className="bg-gray-100 p-10 w-1/4  rounded-2xl drop-shadow-lg h-fit">
           <div className=" flex justify-between items-center  border-b-[1px] border-b-gray-400 py-4 border-dashed">
             <h3 className="text-xl font-medium">Delivery</h3>
             <button className="bg-gray-200 p-2 w-16 rounded-lg drop-shadow-md">

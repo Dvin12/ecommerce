@@ -1,8 +1,12 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { FaTrash } from "react-icons/fa";
+import { deleteFromCart } from "../redux/storeSlice";
+import { ToastContainer, toast } from "react-toastify";
 
 function CartItem() {
+  const dispatch = useDispatch();
   const productData = useSelector((state) => state.store.productData);
+
   return (
     <section className="w-2/3 pr-14 ">
       <div className="w-full bg-slate-100 rounded-xl p-12 drop-shadow-lg">
@@ -20,7 +24,9 @@ function CartItem() {
                 <div className="w-full">
                   <div className="flex justify-between text-xl my-4">
                     <h2 className="text-gray-800">{item.name}</h2>
-                    <h2 className="font-medium">${item.price}</h2>
+                    <h2 className="font-medium">
+                      ${item.quantity * item.price}
+                    </h2>
                   </div>
                   <div className="flex justify-between">
                     <div className="border-[1px] py-1 w-24 border-gray-400 flex items-center justify-center gap-4 rounded-xl my-4 text-lg text-gray-800">
@@ -28,7 +34,13 @@ function CartItem() {
                       <span>1</span>
                       <button className="font-medium">+</button>
                     </div>
-                    <div className="flex items-center gap-2 text-lg font-medium text-gray-500 hover:text-gray-800 duration-300 cursor-pointer">
+                    <div
+                      className="flex items-center gap-2 text-lg font-medium text-gray-500 hover:text-gray-800 duration-300 cursor-pointer"
+                      onClick={() =>
+                        dispatch(deleteFromCart(item.id)) &&
+                        toast.error(`${item.name} has been removed`)
+                      }
+                    >
                       <FaTrash></FaTrash>
                       <span>Delete</span>
                     </div>
@@ -39,6 +51,18 @@ function CartItem() {
           ))}
         </div>
       </div>
+      <ToastContainer
+        position="top-left"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      ></ToastContainer>
     </section>
   );
 }
