@@ -1,6 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import { FaTrash } from "react-icons/fa";
-import { deleteFromCart, resetCart } from "../redux/storeSlice";
+import {
+  decreaseQuantity,
+  deleteFromCart,
+  increaseQuantity,
+  resetCart,
+} from "../redux/storeSlice";
 import { ToastContainer, toast } from "react-toastify";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
@@ -32,9 +37,41 @@ function CartItem() {
                   </div>
                   <div className="flex justify-between">
                     <div className="border-[1px] py-1 w-24 border-gray-400 flex items-center justify-center gap-4 rounded-xl my-4 text-lg text-gray-800">
-                      <button className="font-medium">-</button>
-                      <span>1</span>
-                      <button className="font-medium">+</button>
+                      <button
+                        className="font-medium"
+                        onClick={() =>
+                          dispatch(
+                            decreaseQuantity({
+                              id: item.id,
+                              name: item.name,
+                              image: item.image,
+                              price: item.price,
+                              quantity: 1,
+                              description: item.description,
+                            })
+                          )
+                        }
+                      >
+                        -
+                      </button>
+                      <span>{item.quantity}</span>
+                      <button
+                        className="font-medium"
+                        onClick={() =>
+                          dispatch(
+                            increaseQuantity({
+                              id: item.id,
+                              name: item.name,
+                              image: item.image,
+                              price: item.price,
+                              quantity: 1,
+                              description: item.description,
+                            })
+                          )
+                        }
+                      >
+                        +
+                      </button>
                     </div>
                     <div
                       className="flex items-center gap-2 text-lg font-medium text-gray-500 hover:text-gray-800 duration-300 cursor-pointer"
