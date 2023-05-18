@@ -37,7 +37,7 @@ function Explore() {
       </article>
 
       <article className="px-28">
-        <div className="bg-gradient-to-r from-sky-400 to-blue-500 p-20 w-full flex flex-col gap-6 items-center justify-center rounded-2xl">
+        <div className="bg-gradient-to-r from-sky-400 to-blue-500 p-20 w-full flex flex-col gap-6 items-center justify-center rounded-2xl mb-14 drop-shadow-lg">
           <h3 className="text-2xl font-medium text-white">
             Subscribe To Our Newsletter
           </h3>
@@ -46,7 +46,7 @@ function Explore() {
               placeholder="Your email address"
               className="p-6 w-[700px] rounded-lg"
             ></input>
-            <button className="absolute right-2 bg-gradient-to-r from-blue-500 to-blue-600 px-4 py-3 rounded text-white">
+            <button className="absolute right-4 bg-gradient-to-r from-blue-500 to-blue-600 px-4 py-3 rounded text-white">
               Subscribe
             </button>
           </div>

@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import { productData } from "./api/Api";
 import Login from "./pages/Login";
+import Footer from "./component/Footer";
 
 const Layout = () => {
   return (
@@ -17,6 +18,7 @@ const Layout = () => {
       <Navigation></Navigation>
       <ScrollRestoration></ScrollRestoration>
       <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };
