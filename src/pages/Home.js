@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "../component/Header";
 import Products from "../component/Products";
 import { useLoaderData } from "react-router-dom";
+import Explore from "../component/Explore,";
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -13,6 +14,7 @@ function Home() {
     <div>
       <Header></Header>
       <Products products={products}></Products>
+      <Explore></Explore>
     </div>
   );
 }
