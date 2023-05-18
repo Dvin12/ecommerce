@@ -13,9 +13,10 @@ function Explore() {
             Awesome In Any Space. Perfectly Blend In Your Life.
           </h2>
           <p className=" text-lg w-2/3 tracking-wide leading-relaxed  text-gray-600 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
-            consequat mauris nunc congue nisi vitae suscipit tellus.
+            Designed to excel in any environment with its powerful performance
+            and sleek design. Seamlessly integrating into your lifestyle, it
+            effortlessly harmonizes productivity and style, making it the
+            perfect companion for your everyday endeavors.
           </p>
         </div>
       </article>
@@ -25,12 +26,14 @@ function Explore() {
             We Offer
           </tag>
           <h2 className="text-5xl w-3/5 font-semibold tracking-wide leading-[54px] text-gray-800 ">
-            Awesome In Any Space. Perfectly Blend In Your Life.
+            Capture Life's Brilliance. Unleash Your Inner Photographer.
           </h2>
           <p className=" text-lg w-2/3 tracking-wide leading-relaxed  text-gray-600 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
-            consequat mauris nunc congue nisi vitae suscipit tellus.
+            Effortlessly capture the essence of life, empowering you to unleash
+            your inner photographer and create stunning visuals that tell your
+            unique story. With outstanding image quality and intuitive controls,
+            it's the perfect companion for capturing and preserving
+            unforgettable moments.
           </p>
         </div>
         <img src={camera_header} className="w-4/5 drop-shadow-lg"></img>

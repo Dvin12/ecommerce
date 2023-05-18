@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../component/Header";
-import Products from "../component/Products";
+import NewProducts from "../component/NewProducts";
 import { useLoaderData } from "react-router-dom";
 import Explore from "../component/Explore,";
 
@@ -13,7 +13,7 @@ function Home() {
   return (
     <div>
       <Header></Header>
-      <Products products={products}></Products>
+      <NewProducts products={products}></NewProducts>
       <Explore></Explore>
     </div>
   );
