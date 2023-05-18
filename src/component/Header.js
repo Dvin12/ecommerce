@@ -4,7 +4,7 @@ import { camera_header, laptop_header, lens_header } from "../assets/images";
 function Header() {
   return (
     <header className="bg-slate-200 p-12 h-screen">
-      <section className="mx-28 my-28  grid grid-cols-2 items-center justify-center">
+      <section className="mx-64 my-28  grid grid-cols-2 items-center justify-center">
         <article className="flex flex-col  justify-center">
           <div className="w-1">
             <h1 className="text-8xl font-semibold text-indigo-400">
@@ -22,15 +22,15 @@ function Header() {
         </article>
         <article className="flex relative w-full items-center justify-center">
           <img
-            className="w-96 h-96 absolute z-10 left-14 top-[-140px] drop-shadow-2xl"
+            className="w-72 h-60 absolute z-10 left-14 top-[-60px] drop-shadow-2xl"
             src={camera_header}
           ></img>
           <img
-            className="w-96 h-96 absolute drop-shadow-2xl"
+            className="w-80 h-80 absolute drop-shadow-2xl"
             src={laptop_header}
           ></img>
           <img
-            className="w-96 h-96 absolute right-5 drop-shadow-2xl"
+            className="w-60 h-60 absolute right-20 top-[-100px] drop-shadow-2xl"
             src={lens_header}
           ></img>
         </article>
