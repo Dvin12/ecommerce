@@ -1,9 +1,10 @@
 import { useSelector } from "react-redux";
 import { camera_header, laptop_header, lens_header } from "../assets/images";
+import Buttons from "./Buttons";
 
 function Header() {
   return (
-    <header className="bg-slate-200 p-12 h-screen">
+    <header className="h-screen bg-slate-200 p-12">
       <section className="mx-64 my-28  grid grid-cols-2 items-center justify-center">
         <article className="flex flex-col  justify-center">
           <div className="w-1">
@@ -11,26 +12,22 @@ function Header() {
               Fast <span className="text-gray-800">and</span> Affordable
             </h1>
           </div>
-          <div className="flex gap-8 my-14">
-            <button className=" bg-indigo-500 py-5 px-11 rounded-lg text-white font-medium text-xl tracking-wider hover:bg-indigo-600 transition-all duration-300 shadow-md">
-              Buy Now
-            </button>
-            <button className=" text-gray-600 font-semibold text-md  underline decoration-2 underline-offset-[6px] hover:text-gray-900 duration-300">
-              Learn More
-            </button>
+          <div className="my-14 flex gap-8">
+            <Buttons variant="buy" label="Buy now"></Buttons>
+            <Buttons variant="learn" label="Learn More"></Buttons>
           </div>
         </article>
-        <article className="flex relative w-full items-center justify-center">
+        <article className="relative flex w-full items-center justify-center">
           <img
-            className="w-72 h-60 absolute z-10 left-14 top-[-60px] drop-shadow-2xl"
+            className="absolute left-14 top-[-60px] z-10 h-60 w-72 drop-shadow-2xl"
             src={camera_header}
           ></img>
           <img
-            className="w-80 h-80 absolute drop-shadow-2xl"
+            className="absolute h-80 w-80 drop-shadow-2xl"
             src={laptop_header}
           ></img>
           <img
-            className="w-60 h-60 absolute right-20 top-[-100px] drop-shadow-2xl"
+            className="absolute right-20 top-[-100px] h-60 w-60 drop-shadow-2xl"
             src={lens_header}
           ></img>
         </article>

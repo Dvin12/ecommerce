@@ -4,35 +4,34 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   const productData = useSelector((state) => state.store.productData);
-  console.log(productData);
   return (
-    <nav className="bg-slate-200  p-12  w-auto sticky top-0 z-50 ">
-      <section className="flex items-center justify-between mx-64">
+    <nav className="sticky  top-0  z-50 w-auto bg-slate-200 p-12 ">
+      <section className="mx-64 flex items-center justify-between">
         <Link
           to="/"
-          className="font-extrabold text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 "
+          className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-4xl font-extrabold text-transparent "
         >
           LapLens
         </Link>
         <ul className="flex gap-10 text-lg tracking-wide text-slate-800 ">
-          <li className="cursor-pointer hover:text-indigo-600 duration-300">
+          <li className="cursor-pointer duration-300 hover:text-indigo-600">
             Products
           </li>
-          <li className="cursor-pointer hover:text-indigo-600 duration-300">
+          <li className="cursor-pointer duration-300 hover:text-indigo-600">
             Explore
           </li>
-          <li className="cursor-pointer hover:text-indigo-600 duration-300">
+          <li className="cursor-pointer duration-300 hover:text-indigo-600">
             Support
           </li>
-          <li className="cursor-pointer hover:text-indigo-600 duration-300">
+          <li className="cursor-pointer duration-300 hover:text-indigo-600">
             About Us
           </li>
         </ul>
         <div>
-          <span className="flex gap-4 text-4xl relative">
+          <span className="relative flex gap-4 text-4xl">
             <Link to="/cart">
               <CiShoppingCart className="cursor-pointer "></CiShoppingCart>
-              <span className="bg-indigo-400 rounded-full w-5 h-5 text-base absolute left-5 top-0 text-center text-white">
+              <span className="absolute left-5 top-0 h-5 w-5 rounded-full bg-indigo-400 text-center text-base text-white">
                 {productData.length}
               </span>
             </Link>
