@@ -14,18 +14,26 @@ function Navigation() {
           LapLens
         </Link>
         <ul className="flex gap-10 text-lg tracking-wide text-slate-800 ">
-          <li className="cursor-pointer duration-300 hover:text-indigo-600">
-            Products
-          </li>
-          <li className="cursor-pointer duration-300 hover:text-indigo-600">
-            Explore
-          </li>
-          <li className="cursor-pointer duration-300 hover:text-indigo-600">
-            Support
-          </li>
-          <li className="cursor-pointer duration-300 hover:text-indigo-600">
-            About Us
-          </li>
+          <Link to="/products">
+            <li className="cursor-pointer duration-300 hover:text-indigo-600">
+              Products
+            </li>
+          </Link>
+          <Link to="/explore">
+            <li className="cursor-pointer duration-300 hover:text-indigo-600">
+              Explore
+            </li>
+          </Link>
+          <Link to="/support">
+            <li className="cursor-pointer duration-300 hover:text-indigo-600">
+              Support
+            </li>
+          </Link>
+          <Link to="/about-us">
+            <li className="cursor-pointer duration-300 hover:text-indigo-600">
+              About Us
+            </li>
+          </Link>
         </ul>
         <div>
           <span className="relative flex gap-4 text-4xl">
