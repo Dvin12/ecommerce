@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { camera_header, laptop_header, lens_header } from "../assets/images";
 import Buttons from "./Buttons";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,9 +13,13 @@ function Header() {
               Fast <span className="text-gray-800">and</span> Affordable
             </h1>
           </div>
-          <div className="my-14 flex gap-8">
-            <Buttons variant="buy" label="Buy now"></Buttons>
-            <Buttons variant="learn" label="Learn More"></Buttons>
+          <div className="my-14  flex items-center gap-8">
+            <Link to="/products">
+              <Buttons variant="buy" label="Buy now"></Buttons>
+            </Link>
+            <Link to="/explore">
+              <Buttons variant="learn" label="Learn More"></Buttons>
+            </Link>
           </div>
         </article>
         <article className="relative flex w-full items-center justify-center">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { camera_header, laptop_header, lens_header } from "../assets/images";
 import Buttons from "./Buttons";
 import Newsletter from "./Newsletter";
@@ -13,7 +14,7 @@ function Explore() {
             ></img>
           </div>
           <div className="flex w-fit flex-col gap-4 ">
-            <tag className="w-fit rounded bg-indigo-200 px-3 py-2 text-sm">
+            <tag className="w-fit rounded  bg-indigo-300 px-4 py-2 text-sm drop-shadow-md">
               We Offer
             </tag>
             <h2 className="w-3/5 text-5xl font-semibold leading-[54px] tracking-wide text-gray-800 ">
@@ -26,13 +27,15 @@ function Explore() {
               perfect companion for your everyday endeavors.
             </p>
             <div className="flex gap-8 py-4">
-              <Buttons variant="buy" label="Buy Now"></Buttons>
+              <Link to="/products">
+                <Buttons variant="buy" label="Buy Now"></Buttons>
+              </Link>
             </div>
           </div>
         </article>
         <article className="mx-28 my-48 grid grid-cols-2 ">
           <div className="flex w-fit flex-col gap-4 ">
-            <tag className="w-fit rounded bg-indigo-200 px-3 py-2 text-sm">
+            <tag className="w-fit rounded bg-indigo-300 px-4 py-2 text-sm drop-shadow-md">
               We Offer
             </tag>
             <h2 className="w-3/4 text-5xl font-semibold leading-[54px] tracking-wide text-gray-800 ">
@@ -46,7 +49,9 @@ function Explore() {
               preserving unforgettable moments.
             </p>
             <div className="flex gap-8 py-4">
-              <Buttons variant="buy" label="Buy Now"></Buttons>
+              <Link to="/products">
+                <Buttons variant="buy" label="Buy Now"></Buttons>
+              </Link>
             </div>
           </div>
           <div className="flex items-center justify-center">
