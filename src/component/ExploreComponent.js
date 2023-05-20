@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { camera_header, laptop_header, lens_header } from "../assets/images";
 import Buttons from "./Buttons";
 import Newsletter from "./Newsletter";
-function Explore() {
+function ExploreComponent() {
   return (
     <section className="h-fit w-fit bg-slate-200">
       <div className="mx-40  p-10 py-40 ">
@@ -66,4 +66,4 @@ function Explore() {
   );
 }
 
-export default Explore;
+export default ExploreComponent;

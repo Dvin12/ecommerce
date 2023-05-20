@@ -1,5 +1,11 @@
+import ExploreComponent from "../component/ExploreComponent";
+
 function Explore() {
-  return <div>Explore!!</div>;
+  return (
+    <div>
+      <ExploreComponent></ExploreComponent>
+    </div>
+  );
 }
 
 export default Explore;
