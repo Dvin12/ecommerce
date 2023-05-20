@@ -16,11 +16,11 @@ function Support() {
               contact us by filling out the form or by using other services
               linked below. Our team will be in touch as soon as possible.
             </p>
-            <ul className="my-2 flex flex-col gap-3 text-lg">
+            <ul className="my-2 flex flex-col gap-4 text-lg">
               <li className="flex items-center gap-2">
                 <FaEnvelope></FaEnvelope>info@laplens.com
               </li>
-              <li className="gap- flex items-center">
+              <li className="flex items-center gap-2">
                 <FaPhoneAlt></FaPhoneAlt> +375 001 35789
               </li>
               <li className="flex gap-2 text-2xl">
