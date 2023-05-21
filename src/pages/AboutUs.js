@@ -1,8 +1,10 @@
+import MapComponent from "../component/MapComponent";
+
 function AboutUs() {
   return (
     <section className="bg-slate-200">
       <div className="mx-48 p-28">
-        <div>
+        <div className="flex flex-col gap-8">
           <article className="flex flex-col items-center justify-center gap-8">
             <h2 className="text-5xl font-medium text-indigo-500">About Us</h2>
             <p>
@@ -14,6 +16,10 @@ function AboutUs() {
               worldwide shipping available, we are here to help you bring your
               creative vision to life.
             </p>
+          </article>
+
+          <article className="h-[300px] w-full">
+            <MapComponent></MapComponent>
           </article>
         </div>
       </div>
