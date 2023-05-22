@@ -11,7 +11,7 @@ function Products() {
   }, [data]);
   return (
     <div className="bg-slate-200">
-      <div className="mx-48 flex flex-col items-center justify-center  ">
+      <div className="mx-48 flex flex-col items-center justify-center md  ">
         <h2 className="mt-28 text-6xl  font-medium tracking-wide  text-indigo-400">
           Our Products
         </h2>

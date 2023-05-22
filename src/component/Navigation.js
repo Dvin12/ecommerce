@@ -6,14 +6,14 @@ function Navigation() {
   const productData = useSelector((state) => state.store.productData);
   return (
     <nav className="sticky  top-0  z-50 w-auto bg-slate-200 p-12 ">
-      <section className="mx-64 flex items-center justify-between">
+      <section className="relative mx-auto  flex flex-col items-start xl:mx-64 xl:flex-row xl:items-center xl:justify-between">
         <Link
           to="/"
           className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-4xl font-extrabold text-transparent "
         >
           LapLens
         </Link>
-        <ul className="flex gap-10 text-lg tracking-wide text-slate-800 ">
+        <ul className="my-8 flex flex-col gap-10 text-lg tracking-wide text-slate-800 xl:flex-row ">
           <Link to="/products">
             <li className="cursor-pointer duration-300 hover:text-indigo-600">
               Products
@@ -35,7 +35,7 @@ function Navigation() {
             </li>
           </Link>
         </ul>
-        <div>
+        <div className="absolute right-0 xl:relative">
           <span className="relative flex gap-4 text-4xl">
             <Link to="/cart">
               <CiShoppingCart className="cursor-pointer "></CiShoppingCart>
