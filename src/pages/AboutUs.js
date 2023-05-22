@@ -3,11 +3,11 @@ import MapComponent from "../component/MapComponent";
 function AboutUs() {
   return (
     <section className="bg-slate-200">
-      <div className="mx-48 p-28">
+      <div className="p-12 xl:mx-48 xl:p-28">
         <div className="flex flex-col gap-8">
           <article className="flex flex-col items-center justify-center gap-8">
             <h2 className="text-5xl font-medium text-indigo-500">About Us</h2>
-            <p>
+            <p className="text-justify">
               Your go-to destination in Dallas for cutting-edge technology
               catering to filmmakers, photographers, and video editors. We offer
               a curated selection of high-performance laptops and
@@ -18,7 +18,7 @@ function AboutUs() {
             </p>
           </article>
 
-          <article className="h-[300px] w-full">
+          <article className="h-[500px] w-fit xl:h-[300px]">
             <MapComponent></MapComponent>
           </article>
         </div>

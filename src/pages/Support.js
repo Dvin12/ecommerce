@@ -3,14 +3,14 @@ import { FaWhatsapp, FaTwitter, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 function Support() {
   return (
-    <section className="h-screen bg-slate-200">
-      <div className="mx-48 p-28">
-        <div className="grid grid-cols-2 items-start justify-center gap-20">
+    <section className="h-fit bg-slate-200">
+      <div className="p-12 xl:mx-48 xl:p-28">
+        <div className="flex flex-col items-center justify-center gap-20 xl:grid xl:grid-cols-2 xl:items-start">
           <div className="flex w-full flex-col justify-center gap-4">
-            <h2 className="text-5xl font-semibold text-indigo-400">
+            <h2 className="text-center text-4xl font-semibold text-indigo-400">
               Contact Us
             </h2>
-            <p className="tracking-wide">
+            <p className="text-justify tracking-wide">
               We are here to help. If you have questions about our products or
               experiencing technical difficulties, please don't hesitate and
               contact us by filling out the form or by using other services
