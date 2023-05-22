@@ -37,19 +37,19 @@ function ProductsCard({ product }) {
     <div className="group relative">
       <article
         onClick={handleClick}
-        className="bg-gray-700  rounded-lg flex flex-col items-center justify-around w-[400px] h-[500px] p-12 gap-10 hover:bg-gray-600 duration-300 drop-shadow-sm cursor-pointer"
+        className="flex cursor-pointer  flex-col items-center justify-around gap-10 rounded-lg bg-gray-700 p-8 drop-shadow-sm duration-300 hover:bg-gray-600 xl:h-[500px] xl:w-[400px] xl:p-12"
       >
         <img src={product.image} className="w-fit drop-shadow-xl"></img>
-        <div className="flex items-center gap-12 justify-around ">
+        <div className="flex items-center justify-around gap-12 ">
           <div className="flex flex-col gap-4">
-            <span className="text-gray-400 text-sm ">{product.type}</span>
-            <h3 className="text-xl text-white font-semibold">{product.name}</h3>
+            <span className="text-sm text-gray-400 ">{product.type}</span>
+            <h3 className="text-xl font-semibold text-white">{product.name}</h3>
             <p className="text-xl text-white">${product.price}</p>
           </div>
           <div>
             <button
               onClick={handleButtonClick}
-              className="bg-gradient-to-r from-pink-100 via-purple-300 to-indigo-500 text-4xl p-3 rounded-full drop-shadow-lg"
+              className="rounded-full bg-gradient-to-r from-pink-100 via-purple-300 to-indigo-500 p-3 text-4xl drop-shadow-lg"
             >
               <CiShoppingCart></CiShoppingCart>
             </button>

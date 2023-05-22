@@ -4,61 +4,61 @@ import Buttons from "./Buttons";
 import Newsletter from "./Newsletter";
 function ExploreComponent() {
   return (
-    <section className="h-fit w-fit bg-slate-200">
-      <div className="mx-40  p-10 py-40 ">
-        <article className="mb-20 grid grid-cols-2  ">
+    <section className=" bg-slate-200 xl:h-fit xl:w-fit">
+      <div className="mx-auto px-10  py-40 xl:mx-40 ">
+        <article className="mb-20 flex flex-col xl:grid xl:grid-cols-2  ">
           <div className="flex items-center justify-center">
             <img
               src={laptop_header}
-              className=" w-4/5 items-center drop-shadow-lg"
+              className=" w-full items-center drop-shadow-lg xl:w-4/5"
             ></img>
           </div>
-          <div className="flex w-fit flex-col gap-4 ">
+          <div className="flex w-fit flex-col items-center gap-2 py-5 ">
             <tag className="w-fit rounded  bg-indigo-300 px-4 py-2 text-sm drop-shadow-md">
               We Offer
             </tag>
-            <h2 className="w-3/5 text-5xl font-semibold leading-[54px] tracking-wide text-gray-800 ">
+            <h2 className="w-full py-2 text-center text-4xl font-semibold tracking-wide text-gray-800 xl:w-3/5 xl:text-5xl xl:leading-[54px] ">
               Awesome In Any Space. Perfectly Blend In Your Life.
             </h2>
-            <p className=" w-2/3 text-lg leading-relaxed tracking-wide  text-gray-600 ">
+            <p className=" py-2 text-justify text-lg leading-relaxed tracking-wide text-gray-600  xl:w-2/3 ">
               Designed to excel in any environment with its powerful performance
               and sleek design. Seamlessly integrating into your lifestyle, it
               effortlessly harmonizes productivity and style, making it the
               perfect companion for your everyday endeavors.
             </p>
-            <div className="flex gap-8 py-4">
+            <div className="flex gap-8 py-12">
               <Link to="/products">
                 <Buttons variant="buy" label="Buy Now"></Buttons>
               </Link>
             </div>
           </div>
         </article>
-        <article className="mx-28 my-48 grid grid-cols-2 ">
-          <div className="flex w-fit flex-col gap-4 ">
-            <tag className="w-fit rounded bg-indigo-300 px-4 py-2 text-sm drop-shadow-md">
+        <article className="mx-auto flex w-full flex-col   xl:mx-28 xl:grid xl:grid-cols-2 ">
+          <div className=" order-1 my-12 flex    flex-col items-center justify-center gap-4">
+            <tag className=" rounded bg-indigo-300 px-4 py-2 text-sm drop-shadow-md">
               We Offer
             </tag>
-            <h2 className="w-3/4 text-5xl font-semibold leading-[54px] tracking-wide text-gray-800 ">
+            <h2 className="w-full py-2 text-center text-4xl font-semibold tracking-wide text-gray-800 xl:leading-[54px] ">
               Capture Life's Brilliance. Unleash Your Inner Photographer.
             </h2>
-            <p className=" w-4/5 text-lg leading-relaxed tracking-wide  text-gray-600 ">
+            <p className="w-full py-2 text-justify text-lg leading-relaxed tracking-wide text-gray-600  xl:w-4/5 ">
               Effortlessly capture the essence of life, empowering you to
               unleash your inner photographer and create stunning visuals that
               tell your unique story. With outstanding image quality and
               intuitive controls, it's the perfect companion for capturing and
               preserving unforgettable moments.
             </p>
-            <div className="flex gap-8 py-4">
+            <div className="flex gap-8 py-12">
               <Link to="/products">
                 <Buttons variant="buy" label="Buy Now"></Buttons>
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className=" flex  items-center justify-center">
             <img src={camera_header} className="w-3/5 drop-shadow-lg"></img>
           </div>
         </article>
-        <article className="mx-28 mb-20">
+        <article className="mx-auto mb-20 xl:mx-28">
           <Newsletter></Newsletter>
         </article>
       </div>
