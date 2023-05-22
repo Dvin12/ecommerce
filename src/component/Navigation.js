@@ -1,19 +1,35 @@
-import { CiShoppingCart, CiUser } from "react-icons/ci";
+import { useState } from "react";
+import {
+  CiShoppingCart,
+  CiUser,
+  CiMenuBurger,
+  CiMenuFries,
+} from "react-icons/ci";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   const productData = useSelector((state) => state.store.productData);
   return (
-    <nav className="sticky  top-0  z-50 w-auto bg-slate-200 p-12 ">
-      <section className="relative mx-auto  flex flex-col items-start xl:mx-64 xl:flex-row xl:items-center xl:justify-between">
+    <nav className="sticky  top-0  z-50 w-auto bg-slate-200 p-12 drop-shadow-lg ">
+      <section className="relative mx-auto  flex select-none flex-col items-start xl:mx-64 xl:flex-row xl:items-center xl:justify-between">
         <Link
           to="/"
           className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-4xl font-extrabold text-transparent "
         >
           LapLens
         </Link>
-        <ul className="my-8 flex flex-col gap-10 text-lg tracking-wide text-slate-800 xl:flex-row ">
+        <ul
+          className={`my-8 flex  flex-col gap-10 text-lg tracking-wide text-slate-800 transition-all duration-300 xl:flex-row ${
+            isOpen ? "hidden" : ""
+          }`}
+        >
           <Link to="/products">
             <li className="cursor-pointer duration-300 hover:text-indigo-600">
               Products
@@ -46,6 +62,9 @@ function Navigation() {
             <Link to="/login">
               <CiUser className="cursor-pointer"></CiUser>
             </Link>
+            <div className="cursor-pointer" onClick={handleMenuToggle}>
+              {isOpen ? <CiMenuFries /> : <CiMenuBurger />}
+            </div>
           </span>
         </div>
       </section>
