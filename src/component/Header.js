@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="h-fit bg-slate-200 p-6 xl:p-12 ">
+    <header className="h-full bg-slate-200 px-6 py-20 xl:p-12 ">
       <section className="  mx-auto mt-40 flex  flex-col items-center justify-center gap-44 xl:mx-64 xl:my-28 xl:grid xl:grid-cols-2 xl:gap-0">
         <article className="order-last flex flex-col items-center  justify-center xl:order-none xl:items-start">
-          <div className="">
+          <div>
             <h1 className="text-center text-5xl font-semibold text-indigo-400 xl:w-1/3 xl:text-start xl:text-8xl">
               Fast <span className="text-gray-800">and</span> Affordable
             </h1>

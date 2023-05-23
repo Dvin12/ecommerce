@@ -15,7 +15,7 @@ function Products() {
         <h2 className="mt-6 text-4xl font-semibold  tracking-wide text-indigo-400  xl:text-6xl">
           Our Products
         </h2>
-        <span className="mt-3 h-[3px] w-48 bg-indigo-400 xl:mt-6 xl:h-[4px] xl:w-64"></span>
+
         <p className="mt-8 w-4/5  text-justify  text-gray-600 xl:mt-20 xl:w-3/4  xl:text-center ">
           Our company offers great laptops and cameras because we partner with
           top manufacturers to provide our customers with the latest technology

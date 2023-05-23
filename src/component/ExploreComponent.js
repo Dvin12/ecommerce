@@ -5,8 +5,8 @@ import Newsletter from "./Newsletter";
 function ExploreComponent() {
   return (
     <section className=" bg-slate-200 ">
-      <div className="mx-auto px-6  py-20 xl:mx-40 ">
-        <article className="mb-20 flex flex-col xl:grid xl:grid-cols-2  ">
+      <div className="mx-auto px-6  py-12 xl:mx-40 ">
+        <article className="mb-12 flex flex-col xl:grid xl:grid-cols-2  ">
           <div className="flex items-center justify-center">
             <img
               src={laptop_header}
@@ -58,7 +58,7 @@ function ExploreComponent() {
             <img src={camera_header} className="w-3/5 drop-shadow-lg"></img>
           </div>
         </article>
-        <article className="w-full xl:mx-28">
+        <article className=" xl:mx-28">
           <Newsletter></Newsletter>
         </article>
       </div>

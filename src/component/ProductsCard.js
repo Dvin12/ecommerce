@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addToCart } from "../redux/storeSlice";
 import { ToastContainer, toast } from "react-toastify";
-function ProductsCard({ product }) {
+function ProductsCard({ product, page }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const id = product.name;
@@ -18,6 +18,13 @@ function ProductsCard({ product }) {
       },
     });
   };
+
+  const cardBackground =
+    page === "products"
+      ? "bg-gray-100 hover:bg-gray-400"
+      : "bg-gray-700 hover:bg-gray-600";
+
+  const cardTextColour = page === "products" ? "text-gray-800" : "text-white";
 
   const handleButtonClick = (e) => {
     e.stopPropagation();
@@ -37,14 +44,16 @@ function ProductsCard({ product }) {
     <div className="group relative">
       <article
         onClick={handleClick}
-        className="flex cursor-pointer  flex-col items-center justify-around gap-8 rounded-lg bg-gray-700 p-10 drop-shadow-sm duration-300 hover:bg-gray-600 xl:h-[500px] xl:w-[400px] xl:p-12"
+        className={`flex cursor-pointer  flex-col items-center justify-around gap-8 rounded-lg ${cardBackground} p-10 drop-shadow-sm duration-300 xl:h-[500px] xl:w-[400px] xl:p-12`}
       >
         <img src={product.image} className="w-fit drop-shadow-xl"></img>
         <div className="flex items-center justify-around gap-6 ">
           <div className="flex flex-col gap-6">
             <span className="text-sm text-gray-400 ">{product.type}</span>
-            <h3 className="text-lg font-semibold text-white">{product.name}</h3>
-            <p className="text-lg text-white">${product.price}</p>
+            <h3 className={`text-lg font-semibold ${cardTextColour}`}>
+              {product.name}
+            </h3>
+            <p className={`text-lg ${cardTextColour}`}>${product.price}</p>
           </div>
           <div>
             <button
