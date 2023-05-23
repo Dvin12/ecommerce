@@ -15,28 +15,28 @@ function CartItem() {
   const productData = useSelector((state) => state.store.productData);
 
   return (
-    <section className="w-2/3 pr-12 ">
-      <div className="w-full bg-slate-100 rounded-xl p-12 drop-shadow-lg">
-        <div className="border-b-[2px] border-gray-300 py-4 overflow-auto">
+    <section className="xl:w-2/3 xl:pr-12 ">
+      <div className="w-full bg-slate-100 p-4 xl:rounded-xl xl:p-12 xl:drop-shadow-lg">
+        <div className="overflow-auto border-b-[2px] border-gray-300 py-4">
           <h2 className="text-2xl font-medium">Cart</h2>
         </div>
         <div className="">
           {productData.map((item) => (
             <div key={item.id} className="border-b-[2px] border-gray-300 py-8">
-              <div className="flex flex-row gap-8">
+              <div className="flex flex-row gap-4">
                 <img
-                  className=" p-2  w-1/5  bg-gray-300 rounded-xl"
+                  className=" w-1/3  rounded-xl  bg-gray-300 p-2"
                   src={item.image}
                 ></img>
                 <div className="w-full">
-                  <div className="flex justify-between text-xl my-4">
+                  <div className="flex justify-between xl:my-4 xl:text-xl">
                     <h2 className="text-gray-800">{item.name}</h2>
                     <h2 className="font-medium">
                       ${item.quantity * item.price}
                     </h2>
                   </div>
                   <div className="flex justify-between">
-                    <div className="border-[1px] py-1 w-24 border-gray-400 flex items-center justify-center gap-4 rounded-xl my-4 text-lg text-gray-800">
+                    <div className="my-4 flex w-24 items-center justify-center gap-4 rounded-xl border-[1px] border-gray-400 py-1 text-lg text-gray-800">
                       <button
                         className="font-medium"
                         onClick={() =>
@@ -74,7 +74,7 @@ function CartItem() {
                       </button>
                     </div>
                     <div
-                      className="flex items-center gap-2 text-lg font-medium text-gray-500 hover:text-gray-800 duration-300 cursor-pointer"
+                      className="flex cursor-pointer items-center gap-2 font-medium text-gray-500 duration-300 hover:text-gray-800 xl:text-lg"
                       onClick={() =>
                         dispatch(deleteFromCart(item.id)) &&
                         toast.error(`${item.name} has been removed`)
@@ -91,12 +91,12 @@ function CartItem() {
         </div>
         <button
           onClick={() => dispatch(resetCart([]))}
-          className="my-4 bg-gray-100 px-4 py-2 rounded-lg drop-shadow-lg"
+          className="my-4 rounded-lg bg-gray-100 px-4 py-2 drop-shadow-lg"
         >
           Reset The Cart
         </button>
         <Link to="/">
-          <button className="flex items-center gap-1 text-gray-500 hover:text-gray-800 duration-300">
+          <button className="flex items-center gap-1 text-gray-500 duration-300 hover:text-gray-800">
             <HiArrowNarrowLeft></HiArrowNarrowLeft>
             <span>Go Back</span>
           </button>

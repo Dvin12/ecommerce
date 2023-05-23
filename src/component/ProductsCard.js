@@ -37,14 +37,14 @@ function ProductsCard({ product }) {
     <div className="group relative">
       <article
         onClick={handleClick}
-        className="flex cursor-pointer  flex-col items-center justify-around gap-10 rounded-lg bg-gray-700 p-8 drop-shadow-sm duration-300 hover:bg-gray-600 xl:h-[500px] xl:w-[400px] xl:p-12"
+        className="flex cursor-pointer  flex-col items-center justify-around gap-8 rounded-lg bg-gray-700 p-10 drop-shadow-sm duration-300 hover:bg-gray-600 xl:h-[500px] xl:w-[400px] xl:p-12"
       >
         <img src={product.image} className="w-fit drop-shadow-xl"></img>
-        <div className="flex items-center justify-around gap-12 ">
-          <div className="flex flex-col gap-4">
+        <div className="flex items-center justify-around gap-6 ">
+          <div className="flex flex-col gap-6">
             <span className="text-sm text-gray-400 ">{product.type}</span>
-            <h3 className="text-xl font-semibold text-white">{product.name}</h3>
-            <p className="text-xl text-white">${product.price}</p>
+            <h3 className="text-lg font-semibold text-white">{product.name}</h3>
+            <p className="text-lg text-white">${product.price}</p>
           </div>
           <div>
             <button

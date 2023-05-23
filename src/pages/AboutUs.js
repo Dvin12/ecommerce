@@ -6,7 +6,7 @@ function AboutUs() {
       <div className="p-12 xl:mx-48 xl:p-28">
         <div className="flex flex-col gap-8">
           <article className="flex flex-col items-center justify-center gap-8">
-            <h2 className="text-5xl font-medium text-indigo-500">About Us</h2>
+            <h2 className="text-4xl font-semibold text-indigo-500">About Us</h2>
             <p className="text-justify">
               Your go-to destination in Dallas for cutting-edge technology
               catering to filmmakers, photographers, and video editors. We offer

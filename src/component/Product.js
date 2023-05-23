@@ -38,18 +38,27 @@ function Product() {
   };
 
   return (
-    <div className="bg-slate-200 h-screen">
-      <article className="grid grid-cols-2 items-center p-28  w-fit ">
+    <div className="bg-slate-200 xl:h-screen">
+      <article className="flex flex-col items-center p-6 xl:grid xl:w-fit xl:grid-cols-2  xl:p-28 ">
         <section className="flex items-center justify-center">
-          <img className="w-[600px] drop-shadow-lg" src={details.image}></img>
+          <img
+            className="drop-shadow-lg xl:w-[600px]"
+            src={details.image}
+          ></img>
         </section>
-        <section>
-          <h2 className="text-4xl py-1">{details.name}</h2>
-          <span className="text-xl text-gray-500">{details.brand}</span>
-          <h3 className="text-3xl my-2 font-semibold">${details.price}</h3>
-          <p className="my-10 text-lg w-4/5">{details.description}</p>
-          <div className="flex gap-12">
-            <div className="border-2 rounded-md border-slate-700 w-[180px] p-2 flex items-center justify-center gap-4 ">
+        <section className="flex flex-col ">
+          <h2 className="py-2 text-center text-4xl">{details.name}</h2>
+          <span className=" text-center text-xl text-gray-500">
+            {details.brand}
+          </span>
+          <h3 className="my-2 text-center text-3xl font-semibold">
+            ${details.price}
+          </h3>
+          <p className="text-justify text-lg xl:my-10 xl:w-4/5">
+            {details.description}
+          </p>
+          <div className="flex flex-col items-center justify-center gap-4 py-10 xl:gap-12">
+            <div className="flex items-center justify-between gap-3 rounded-md border-2 border-slate-700 px-10 py-3 xl:w-[180px] xl:gap-4 ">
               <span>Quantity</span>
               <button onClick={handleDecrease}>-</button>
               <span>{baseQnty}</span>
@@ -57,14 +66,14 @@ function Product() {
             </div>
             <button
               onClick={handleAddToCart}
-              className="bg-indigo-500 w-[180px] rounded-md text-white hover:bg-indigo-600 duration-300 drop-shadow-lg"
+              className="w-fit rounded-md bg-indigo-500 px-14 py-3 text-white drop-shadow-lg duration-300 hover:bg-indigo-600 xl:w-[180px]"
             >
               Add To Cart
             </button>
           </div>
           <div className="my-8 w-fit">
             <Link to="/">
-              <button className="text-gray-500 font-medium hover:text-gray-800 duration-300 flex items-center">
+              <button className="flex items-center font-medium text-gray-500 duration-300 hover:text-gray-800">
                 <HiArrowNarrowLeft className="text-lg "></HiArrowNarrowLeft>
                 Go Back
               </button>

@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="h-screen  bg-slate-200 p-6 xl:p-12 ">
-      <section className="  mx-auto mt-60 flex  flex-col items-center justify-center gap-48 xl:mx-64 xl:my-28 xl:grid xl:grid-cols-2 xl:gap-0">
+    <header className="h-fit bg-slate-200 p-6 xl:p-12 ">
+      <section className="  mx-auto mt-40 flex  flex-col items-center justify-center gap-44 xl:mx-64 xl:my-28 xl:grid xl:grid-cols-2 xl:gap-0">
         <article className="order-last flex flex-col items-center  justify-center xl:order-none xl:items-start">
           <div className="">
-            <h1 className="text-center text-6xl font-semibold text-indigo-400 xl:w-1/3 xl:text-start xl:text-8xl">
+            <h1 className="text-center text-5xl font-semibold text-indigo-400 xl:w-1/3 xl:text-start xl:text-8xl">
               Fast <span className="text-gray-800">and</span> Affordable
             </h1>
           </div>
-          <div className="order-last my-14  flex items-center gap-6 xl:order-none">
+          <div className="order-last my-16  flex flex-col items-center gap-5 xl:order-none">
             <Link to="/products">
               <Buttons variant="buy" label="Buy now"></Buttons>
             </Link>
@@ -24,7 +24,7 @@ function Header() {
         </article>
         <article className=" relative  flex w-full items-center justify-center">
           <img
-            className="absolute left-1 top-[-40px] z-10 h-44 w-48 drop-shadow-2xl xl:left-14 xl:top-[-60px] xl:h-60 xl:w-72"
+            className="absolute left-1 top-[-10px] z-10  w-44 drop-shadow-2xl xl:left-14 xl:top-[-60px] xl:h-60 xl:w-72"
             src={camera_header}
           ></img>
           <img
@@ -32,7 +32,7 @@ function Header() {
             src={laptop_header}
           ></img>
           <img
-            className=" absolute right-1 top-[-50px] w-40 drop-shadow-2xl xl:right-20 xl:top-[-100px] xl:h-60 xl:w-60"
+            className=" absolute right-[-20px] top-[-70px] w-48 drop-shadow-2xl xl:right-20 xl:top-[-100px] xl:h-60 xl:w-60"
             src={lens_header}
           ></img>
         </article>
