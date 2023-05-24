@@ -8,11 +8,11 @@ function Header() {
     <header className="h-full bg-slate-200 px-6 py-20 md:h-screen md:py-60 xl:p-4 ">
       <section className="  mx-auto mt-40 flex  flex-col items-center justify-center gap-44 xl:mx-40 xl:my-44 xl:grid xl:grid-cols-2 xl:gap-0 ">
         <article className="order-last flex flex-col items-center  justify-center xl:order-none xl:items-start">
-          <h1 className="text-center text-5xl font-semibold text-indigo-400  md:text-6xl xl:w-2/4 xl:text-start xl:text-8xl  ">
+          <h1 className="text-center text-5xl font-semibold text-indigo-400  md:mt-10 md:w-3/6 md:text-6xl xl:w-2/4 xl:text-start xl:text-8xl  ">
             Fast <span className="text-gray-800">and</span> Affordable
           </h1>
 
-          <div className="order-last my-4 flex  flex-col items-center gap-5 md:my-40 xl:order-none xl:my-10 xl:flex-row">
+          <div className="order-last my-4 flex  flex-col items-center gap-5 md:my-20 xl:order-none xl:my-10 xl:flex-row">
             <Link to="/products">
               <Buttons variant="buy" label="Buy now"></Buttons>
             </Link>
