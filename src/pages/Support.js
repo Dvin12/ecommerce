@@ -4,7 +4,7 @@ import { FaWhatsapp, FaTwitter, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 function Support() {
   return (
     <section className="h-full bg-slate-200 md:h-screen">
-      <div className="p-12 xl:mx-auto xl:p-28">
+      <div className="p-5 xl:mx-auto xl:p-28">
         <div className="flex flex-col items-center justify-center  xl:grid xl:grid-cols-2 xl:items-start xl:gap-40">
           <div className="flex w-full flex-col justify-center gap-6">
             <h2 className="text-center text-4xl font-semibold text-indigo-400 md:text-5xl xl:text-start">
@@ -29,7 +29,7 @@ function Support() {
               </li>
             </ul>
           </div>
-          <div className="my-24 xl:my-auto">
+          <div className=" my-24  xl:my-auto">
             <ContactForm></ContactForm>
           </div>
         </div>

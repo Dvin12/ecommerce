@@ -18,7 +18,7 @@ function Navigation() {
   const productData = useSelector((state) => state.store.productData);
   return (
     <nav className="sticky top-0  z-50  bg-slate-200 p-4 drop-shadow-lg md:p-6 ">
-      <section className="relative mx-auto  flex select-none flex-col items-start xl:mx-40 xl:flex-row xl:items-center xl:justify-between">
+      <section className="relative mx-auto flex  select-none flex-col items-start sm:mx-2 xl:mx-40 xl:flex-row xl:items-center xl:justify-between">
         <Link
           to="/"
           className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-2xl font-extrabold text-transparent md:text-3xl xl:text-4xl   "

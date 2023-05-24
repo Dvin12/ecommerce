@@ -2,8 +2,8 @@ import Buttons from "./Buttons";
 
 function ContactForm() {
   return (
-    <section className=" rounded-xl bg-gray-100 drop-shadow-md ">
-      <form className="flex w-[350px] flex-col gap-6 p-4 md:w-[700px] md:p-10 xl:w-full xl:justify-center xl:p-12">
+    <section className="  rounded-xl bg-gray-100 drop-shadow-md">
+      <form className=" flex w-[350px] flex-col gap-6 p-6 md:w-[700px] md:p-10 xl:w-full xl:justify-center xl:p-12">
         <div>
           <input
             placeholder="Full name"

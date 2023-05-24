@@ -29,8 +29,9 @@ function Cart() {
 
   return (
     <div className=" bg-slate-200">
-      <section className="mx-auto flex flex-col  justify-center  xl:mx-48 xl:grid xl:grid-cols-2 xl:items-start xl:justify-items-end xl:py-20">
+      <section className="mx-auto flex  flex-col  justify-center  xl:mx-48 xl:grid xl:grid-cols-2 xl:items-start xl:justify-items-end xl:py-20">
         <CartItem></CartItem>
+
         <article className="  h-fit bg-gray-100 p-4 py-14   md:p-8   xl:h-fit xl:w-3/4 xl:rounded-2xl xl:p-14 xl:drop-shadow-lg">
           <div className=" flex items-center justify-between  border-b-[1px] border-dashed border-b-gray-400 py-4">
             <h3 className="text-xl font-medium">Delivery</h3>
