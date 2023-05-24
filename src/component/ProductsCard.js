@@ -44,7 +44,7 @@ function ProductsCard({ product, page }) {
     <div className="group relative flex justify-center">
       <article
         onClick={handleClick}
-        className={` flex  cursor-pointer flex-col items-center gap-10 rounded-lg ${cardBackground} p-10 drop-shadow-sm duration-300 md:w-fit md:justify-center xl:h-[500px] xl:w-[400px] xl:p-8`}
+        className={` my-20  flex cursor-pointer flex-col items-center gap-10 rounded-lg ${cardBackground} p-14 drop-shadow-sm duration-300 md:w-fit md:justify-center xl:my-0  xl:h-[500px] xl:w-[400px] xl:p-8`}
       >
         <img
           src={product.image}

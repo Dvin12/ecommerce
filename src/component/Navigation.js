@@ -26,7 +26,7 @@ function Navigation() {
           LapLens
         </Link>
         <ul
-          className={`my-4 flex flex-col items-center gap-6 text-lg tracking-wider text-slate-800 transition-all duration-300 md:text-xl xl:my-6 xl:flex-row xl:gap-20 xl:text-xl ${
+          className={`my-4 flex flex-col items-start gap-6 text-lg tracking-wider text-slate-800 transition-all duration-300 md:text-xl xl:my-6 xl:flex-row xl:items-center xl:gap-20 xl:text-xl ${
             isOpen ? "hidden" : ""
           }  xl:flex`}
         >

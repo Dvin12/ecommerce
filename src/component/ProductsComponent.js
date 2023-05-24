@@ -4,7 +4,7 @@ function ProductsComponent({ products }) {
   return (
     <section>
       <div className="mx-auto xl:mx-60">
-        <section className="item-center flex flex-col justify-center gap-20  xl:my-20 xl:grid xl:grid-cols-3">
+        <section className="item-center flex flex-col justify-center xl:my-20  xl:grid xl:grid-cols-3 xl:gap-10">
           {products.map((item) => (
             <ProductsCard
               key={item.id}

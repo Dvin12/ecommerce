@@ -1,6 +1,6 @@
 function Newsletter() {
   return (
-    <div className=" flex w-full flex-col items-center justify-center gap-6 rounded-2xl bg-gradient-to-r from-sky-300 to-blue-500 px-2 py-20 drop-shadow-lg md:py-8 xl:py-24">
+    <div className=" flex  flex-col items-center justify-center gap-6 bg-gradient-to-r from-sky-300 to-blue-500 px-2 py-20 drop-shadow-lg md:py-8 xl:rounded-2xl xl:py-24">
       <div className="flex flex-col items-center justify-center gap-2">
         <h3 className="text-lg font-medium text-white xl:text-3xl">
           Subscribe To Our Newsletter

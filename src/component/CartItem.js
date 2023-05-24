@@ -15,7 +15,7 @@ function CartItem() {
   const productData = useSelector((state) => state.store.productData);
 
   return (
-    <section className=" flex gap-20 xl:w-full ">
+    <section className=" flex xl:w-full xl:gap-20 ">
       <div className="bg-slate-100 p-4 md:p-8 xl:w-full xl:rounded-xl xl:p-12 xl:drop-shadow-lg">
         <div className="overflow-auto border-b-[2px] border-gray-300 py-4">
           <h2 className="text-2xl font-medium">Cart</h2>

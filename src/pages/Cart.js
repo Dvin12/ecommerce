@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import CartItem from "../component/CartItem";
 import { ToastContainer, toast } from "react-toastify";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const productData = useSelector((state) => state.store.productData);
@@ -30,7 +31,7 @@ function Cart() {
     <div className=" bg-slate-200">
       <section className="mx-auto flex flex-col  justify-center  xl:mx-48 xl:grid xl:grid-cols-2 xl:items-start xl:justify-items-end xl:py-20">
         <CartItem></CartItem>
-        <article className=" h-fit bg-gray-100 p-4 py-14 md:p-8   xl:w-3/5 xl:rounded-2xl xl:p-10 xl:drop-shadow-lg">
+        <article className="  h-fit bg-gray-100 p-4 py-14   md:p-8   xl:h-fit xl:w-3/4 xl:rounded-2xl xl:p-14 xl:drop-shadow-lg">
           <div className=" flex items-center justify-between  border-b-[1px] border-dashed border-b-gray-400 py-4">
             <h3 className="text-xl font-medium">Delivery</h3>
             <button className="w-16 rounded-lg bg-gray-200 p-2 drop-shadow-md">
@@ -59,9 +60,11 @@ function Cart() {
             <button className="rounded-lg bg-indigo-500 p-2 text-lg font-medium text-gray-100 drop-shadow-lg duration-300 hover:bg-indigo-600">
               Proceed to checkout
             </button>
-            <button className="rounded-lg bg-gray-100 p-2 text-lg font-medium text-gray-900 drop-shadow-lg duration-300 hover:bg-gray-200">
-              Continue shopping
-            </button>
+            <Link to="/products">
+              <button className="w-full rounded-lg bg-gray-100 p-2 text-lg font-medium text-gray-900 drop-shadow-lg duration-300 hover:bg-gray-200">
+                Continue shopping
+              </button>
+            </Link>
           </div>
         </article>
       </section>

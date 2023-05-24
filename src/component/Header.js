@@ -21,17 +21,17 @@ function Header() {
             </Link>
           </div>
         </article>
-        <article className=" relative  flex w-full items-center justify-center">
+        <article className=" relative  flex w-full items-center justify-center xl:scale-100 xl:transform">
           <img
-            className="absolute left-1 top-[-10px] z-10 w-44 drop-shadow-2xl  md:left-28 md:top-[-40px] md:w-64 xl:left-10 xl:top-[-40px]  xl:w-[340px]"
+            className="absolute left-1 top-[-10px] z-10 w-44 drop-shadow-2xl  md:left-28 md:top-[-40px] md:w-64 xl:left-10 xl:top-[-40px]  xl:w-[340px] "
             src={camera_header}
           ></img>
           <img
-            className="md: absolute h-60 w-80 drop-shadow-2xl md:h-auto md:w-3/5 xl:w-[650px]"
+            className="md: absolute h-60 w-80 drop-shadow-2xl md:h-auto md:w-3/5 xl:w-[650px] "
             src={laptop_header}
           ></img>
           <img
-            className=" absolute right-[-20px] top-[-70px] w-48 drop-shadow-2xl md:right-[120px] md:top-[-100px] md:w-60 xl:right-12 xl:top-[-120px]  xl:w-[320px]"
+            className=" absolute right-[-20px] top-[-70px] w-48 scale-100 drop-shadow-2xl md:right-[120px] md:top-[-100px] md:w-60 xl:right-12  xl:top-[-120px] xl:w-[320px] "
             src={lens_header}
           ></img>
         </article>
