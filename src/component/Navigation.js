@@ -17,16 +17,16 @@ function Navigation() {
 
   const productData = useSelector((state) => state.store.productData);
   return (
-    <nav className="sticky top-0  z-50  bg-slate-200 p-4 drop-shadow-lg ">
-      <section className="relative mx-auto  flex select-none flex-col items-start xl:mx-64 xl:flex-row xl:items-center xl:justify-between">
+    <nav className="sticky top-0  z-50  bg-slate-200 p-4 drop-shadow-lg md:p-6 ">
+      <section className="relative mx-auto  flex select-none flex-col items-start xl:mx-40 xl:flex-row xl:items-center xl:justify-between">
         <Link
           to="/"
-          className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-2xl font-extrabold text-transparent xl:text-4xl   "
+          className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-2xl font-extrabold text-transparent md:text-3xl xl:text-4xl   "
         >
           LapLens
         </Link>
         <ul
-          className={`my-4 flex  flex-col gap-6 text-lg tracking-wide text-slate-800 transition-all duration-300 xl:flex-row ${
+          className={`my-4 flex flex-col items-center gap-6 text-lg tracking-wider text-slate-800 transition-all duration-300 md:text-xl xl:my-6 xl:flex-row xl:gap-20 xl:text-xl ${
             isOpen ? "hidden" : ""
           }  xl:flex`}
         >
@@ -52,7 +52,7 @@ function Navigation() {
           </Link>
         </ul>
         <div className="absolute right-0 xl:relative">
-          <span className="relative flex gap-4 text-3xl">
+          <span className="relative flex gap-4 text-3xl xl:text-4xl">
             <Link to="/cart">
               <CiShoppingCart className="cursor-pointer "></CiShoppingCart>
               <span className="absolute left-5 top-0 h-5 w-5 rounded-full bg-indigo-400 text-center text-sm text-white">

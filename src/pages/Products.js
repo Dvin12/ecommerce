@@ -10,13 +10,13 @@ function Products() {
     setProducts(data.data);
   }, [data]);
   return (
-    <div className="bg-slate-200 py-8">
-      <div className="mx-auto flex flex-col items-center justify-center xl:mx-48  ">
-        <h2 className="mt-6 text-4xl font-semibold  tracking-wide text-indigo-400  xl:text-6xl">
+    <div className="bg-slate-200 py-2">
+      <div className="mx-0 flex flex-col items-center justify-center   ">
+        <h2 className="mt-6 text-3xl font-semibold  tracking-wide text-indigo-400  xl:mt-20 xl:text-5xl">
           Our Products
         </h2>
 
-        <p className="mt-8 w-4/5  text-justify  text-gray-600 xl:mt-20 xl:w-3/4  xl:text-center ">
+        <p className="mt-8 w-4/5  text-justify  text-gray-600 xl:mt-10  xl:text-center ">
           Our company offers great laptops and cameras because we partner with
           top manufacturers to provide our customers with the latest technology
           and innovative designs. Whether you're looking for a high-performance
@@ -24,7 +24,9 @@ function Products() {
           you at competitive prices.
         </p>
       </div>
-      <ProductsComponent products={products}></ProductsComponent>
+      <div className="md:mx-40 xl:mx-auto">
+        <ProductsComponent products={products}></ProductsComponent>
+      </div>
     </div>
   );
 }

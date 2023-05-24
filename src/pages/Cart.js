@@ -28,9 +28,9 @@ function Cart() {
 
   return (
     <div className=" bg-slate-200">
-      <section className="mx-auto flex flex-col  justify-center  xl:mx-20 xl:py-20">
+      <section className="mx-auto flex flex-col  justify-center  xl:mx-48 xl:grid xl:grid-cols-2 xl:items-start xl:justify-items-end xl:py-20">
         <CartItem></CartItem>
-        <article className=" h-fit bg-gray-100 p-4 py-14 xl:w-1/4  xl:rounded-2xl xl:p-10 xl:drop-shadow-lg">
+        <article className=" h-fit bg-gray-100 p-4 py-14 md:p-8   xl:w-3/5 xl:rounded-2xl xl:p-10 xl:drop-shadow-lg">
           <div className=" flex items-center justify-between  border-b-[1px] border-dashed border-b-gray-400 py-4">
             <h3 className="text-xl font-medium">Delivery</h3>
             <button className="w-16 rounded-lg bg-gray-200 p-2 drop-shadow-md">
@@ -55,7 +55,7 @@ function Cart() {
             <h3 className="text-gray-800">Total</h3>
             <span className=" font-medium text-black">${totalAmount}</span>
           </div>
-          <div className="flex w-full flex-col gap-2  ">
+          <div className="flex w-full flex-col gap-4   ">
             <button className="rounded-lg bg-indigo-500 p-2 text-lg font-medium text-gray-100 drop-shadow-lg duration-300 hover:bg-indigo-600">
               Proceed to checkout
             </button>

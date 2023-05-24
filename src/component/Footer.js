@@ -6,9 +6,9 @@ import {
 } from "react-icons/fa";
 function Footer() {
   return (
-    <section className="bg-gray-900 p-12 ">
-      <article className="mx-auto my-auto flex flex-wrap items-start  justify-items-center gap-8 xl:mx-40  xl:my-10 xl:grid xl:grid-cols-4 xl:gap-0  ">
-        <div className="flex flex-col gap-2 ">
+    <section className=" bg-gray-900 p-12 ">
+      <article className="mx-auto my-1 flex  flex-wrap items-start  justify-items-center gap-8 xl:mx-40  xl:my-10 xl:grid xl:grid-cols-4 xl:gap-0  ">
+        <div className="flex  flex-col gap-2 ">
           <h3 className="text-4xl font-semibold text-white">LapLens</h3>
           <ul className="my-2  flex gap-4  text-lg text-white ">
             <li className="cursor-pointer rounded-full  bg-gray-800 p-2 duration-300 hover:bg-gray-700">

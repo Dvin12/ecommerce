@@ -3,10 +3,10 @@ function Buttons({ variant, label }) {
 
   if (variant === "buy") {
     buttonClasses +=
-      "rounded-lg bg-indigo-500 px-8 py-4 text-lg font-medium tracking-wide text-white drop-shadow-lg transition-all duration-300 hover:bg-indigo-600";
+      "rounded-lg bg-indigo-500 px-8 py-4 text-lg font-medium tracking-wide text-white drop-shadow-lg transition-all duration-300 hover:bg-indigo-600 md:px-14 md:py-6 md:text-xl";
   } else if (variant === "learn") {
     buttonClasses +=
-      "text-sm font-semibold text-gray-600  underline decoration-2 tracking-wide underline-offset-[6px] duration-300 hover:text-gray-900";
+      "text-sm font-semibold text-gray-600  underline decoration-2 tracking-wide underline-offset-[6px] duration-300 hover:text-gray-900 md:text-lg";
   } else if (variant === "send") {
     buttonClasses +=
       "rounded-lg bg-indigo-500 px-4 py-4 text-xl  tracking-wider text-white drop-shadow-lg transition-all duration-300 hover:bg-indigo-600";

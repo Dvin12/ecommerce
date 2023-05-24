@@ -21,7 +21,7 @@ function ProductsCard({ product, page }) {
 
   const cardBackground =
     page === "products"
-      ? "bg-gray-100 hover:bg-gray-400"
+      ? "bg-gray-100 hover:bg-gray-300"
       : "bg-gray-700 hover:bg-gray-600";
 
   const cardTextColour = page === "products" ? "text-gray-800" : "text-white";
@@ -41,13 +41,16 @@ function ProductsCard({ product, page }) {
     ) && toast.success(`${product.name} is added to the cart!`);
   };
   return (
-    <div className="group relative">
+    <div className="group relative flex justify-center">
       <article
         onClick={handleClick}
-        className={`flex cursor-pointer  flex-col items-center justify-around gap-8 rounded-lg ${cardBackground} p-10 drop-shadow-sm duration-300 xl:h-[500px] xl:w-[400px] xl:p-12`}
+        className={` flex  cursor-pointer flex-col items-center gap-10 rounded-lg ${cardBackground} p-10 drop-shadow-sm duration-300 md:w-fit md:justify-center xl:h-[500px] xl:w-[400px] xl:p-8`}
       >
-        <img src={product.image} className="w-fit drop-shadow-xl"></img>
-        <div className="flex items-center justify-around gap-6 ">
+        <img
+          src={product.image}
+          className="w-fit drop-shadow-xl md:w-3/4"
+        ></img>
+        <div className="flex items-center justify-around gap-16 ">
           <div className="flex flex-col gap-6">
             <span className="text-sm text-gray-400 ">{product.type}</span>
             <h3 className={`text-lg font-semibold ${cardTextColour}`}>
