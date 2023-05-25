@@ -2,9 +2,9 @@ import ExploreComponent from "../component/ExploreComponent";
 
 function Explore() {
   return (
-    <div>
+    <main>
       <ExploreComponent></ExploreComponent>
-    </div>
+    </main>
   );
 }
 

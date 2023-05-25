@@ -3,7 +3,7 @@ import ProductsCard from "./ProductsCard";
 function ProductsComponent({ products }) {
   return (
     <section>
-      <div className="mx-auto xl:mx-60">
+      <article className="mx-auto xl:mx-60">
         <section className="item-center flex flex-col justify-center xl:my-20  xl:grid xl:grid-cols-3 xl:gap-10">
           {products.map((item) => (
             <ProductsCard
@@ -13,7 +13,7 @@ function ProductsComponent({ products }) {
             ></ProductsCard>
           ))}
         </section>
-      </div>
+      </article>
     </section>
   );
 }

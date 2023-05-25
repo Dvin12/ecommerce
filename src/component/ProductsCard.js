@@ -41,7 +41,7 @@ function ProductsCard({ product, page }) {
     ) && toast.success(`${product.name} is added to the cart!`);
   };
   return (
-    <div className="group relative flex justify-center">
+    <section className="group relative flex justify-center">
       <article
         onClick={handleClick}
         className={` my-20  flex cursor-pointer flex-col items-center gap-10 rounded-lg ${cardBackground} p-14 drop-shadow-sm duration-300 sm:w-[400px] md:w-fit md:justify-center  xl:my-0 xl:h-[500px] xl:w-[400px] xl:p-8`}
@@ -49,15 +49,16 @@ function ProductsCard({ product, page }) {
         <img
           src={product.image}
           className="w-fit drop-shadow-xl md:w-3/4"
+          alt="image of the product"
         ></img>
         <div className="flex items-center justify-around gap-16 ">
-          <div className="flex flex-col gap-6">
+          <title className="flex flex-col gap-6">
             <span className="text-sm text-gray-400 ">{product.type}</span>
             <h3 className={`text-lg font-semibold ${cardTextColour}`}>
               {product.name}
             </h3>
             <p className={`text-lg ${cardTextColour}`}>${product.price}</p>
-          </div>
+          </title>
           <div>
             <button
               onClick={handleButtonClick}
@@ -80,7 +81,7 @@ function ProductsCard({ product, page }) {
         pauseOnHover
         theme="dark"
       ></ToastContainer>
-    </div>
+    </section>
   );
 }
 

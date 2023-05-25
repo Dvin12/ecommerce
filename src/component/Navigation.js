@@ -31,28 +31,28 @@ function Navigation() {
           }  xl:flex`}
         >
           <Link to="/products">
-            <li className="cursor-pointer duration-300 hover:text-indigo-600">
-              Products
+            <li className=" duration-300 hover:text-indigo-600">
+              <a>Products</a>
             </li>
           </Link>
           <Link to="/explore">
-            <li className="cursor-pointer duration-300 hover:text-indigo-600">
-              Explore
+            <li className=" duration-300 hover:text-indigo-600">
+              <a>Explore</a>
             </li>
           </Link>
           <Link to="/support">
-            <li className="cursor-pointer duration-300 hover:text-indigo-600">
-              Support
+            <li className=" duration-300 hover:text-indigo-600">
+              <a>Support</a>
             </li>
           </Link>
           <Link to="/about-us">
-            <li className="cursor-pointer duration-300 hover:text-indigo-600">
-              About Us
+            <li className=" duration-300 hover:text-indigo-600">
+              <a>About Us</a>
             </li>
           </Link>
         </ul>
-        <div className="absolute right-0 xl:relative">
-          <span className="relative flex gap-4 text-3xl xl:text-4xl">
+        <section className="absolute right-0 xl:relative">
+          <aside className="relative flex gap-4 text-3xl xl:text-4xl">
             <Link to="/cart">
               <CiShoppingCart className="cursor-pointer "></CiShoppingCart>
               <span className="absolute left-5 top-0 h-5 w-5 rounded-full bg-indigo-400 text-center text-sm text-white">
@@ -62,14 +62,14 @@ function Navigation() {
             <Link to="/login">
               <CiUser className="cursor-pointer"></CiUser>
             </Link>
-            <div
+            <span
               className="cursor-pointer xl:hidden"
               onClick={handleMenuToggle}
             >
               {isOpen ? <CiMenuBurger /> : <CiMenuFries />}
-            </div>
-          </span>
-        </div>
+            </span>
+          </aside>
+        </section>
       </section>
     </nav>
   );

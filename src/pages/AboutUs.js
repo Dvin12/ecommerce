@@ -2,8 +2,8 @@ import MapComponent from "../component/MapComponent";
 
 function AboutUs() {
   return (
-    <section className="bg-slate-200">
-      <div className="h-full p-5 sm:p-6 xl:mx-28 xl:p-20">
+    <main className="bg-slate-200">
+      <section className="h-full p-5 py-10 sm:p-6 xl:mx-28 xl:p-20">
         <div className="flex flex-col gap-8">
           <article className="flex flex-col items-center justify-center gap-8">
             <h2 className="text-4xl font-semibold text-indigo-400 xl:text-5xl">
@@ -20,12 +20,12 @@ function AboutUs() {
             </p>
           </article>
 
-          <article className="h-[500px]  w-full md:w-full xl:mt-3 xl:h-[400px]">
+          <figure className="h-[500px]  w-full md:w-full xl:mt-3 xl:h-[400px]">
             <MapComponent></MapComponent>
-          </article>
+          </figure>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
 

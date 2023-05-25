@@ -38,7 +38,7 @@ function Product() {
   };
 
   return (
-    <div className="bg-slate-200 xl:h-screen">
+    <main className="bg-slate-200 xl:h-screen">
       <article className="flex flex-col items-center p-6 xl:grid xl:w-fit xl:grid-cols-2  xl:p-28 ">
         <section className="flex items-center justify-center">
           <img
@@ -59,7 +59,7 @@ function Product() {
           <p className="text-justify text-lg xl:my-10 xl:w-4/5 xl:text-start">
             {details.description}
           </p>
-          <div className="flex flex-col items-center justify-center gap-4 py-10 xl:flex-row xl:justify-start xl:gap-12">
+          <section className="flex flex-col items-center justify-center gap-4 py-10 xl:flex-row xl:justify-start xl:gap-12">
             <div className="flex items-center justify-between gap-3 rounded-md border-2 border-slate-700 px-8 py-3 xl:w-[180px] xl:gap-4 xl:px-3 ">
               <span>Quantity</span>
               <button onClick={handleDecrease}>-</button>
@@ -72,15 +72,15 @@ function Product() {
             >
               Add To Cart
             </button>
-          </div>
-          <div className="my-8 w-fit">
+          </section>
+          <section className="my-8 w-fit">
             <Link to="/products">
               <button className="flex items-center font-medium text-gray-500 duration-300 hover:text-gray-800">
                 <HiArrowNarrowLeft className="text-lg "></HiArrowNarrowLeft>
                 Go Back
               </button>
             </Link>
-          </div>
+          </section>
         </section>
       </article>
       <ToastContainer
@@ -95,7 +95,7 @@ function Product() {
         pauseOnHover
         theme="dark"
       ></ToastContainer>
-    </div>
+    </main>
   );
 }
 

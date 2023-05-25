@@ -28,18 +28,18 @@ function Cart() {
   }, [productData]);
 
   return (
-    <div className=" bg-slate-200">
+    <main className=" bg-slate-200">
       <section className="mx-auto flex  flex-col  justify-center  xl:mx-48 xl:grid xl:grid-cols-2 xl:items-start xl:justify-items-end xl:py-20">
         <CartItem></CartItem>
 
         <article className="  h-fit bg-gray-100 p-4 py-14   md:p-8   xl:h-fit xl:w-3/4 xl:rounded-2xl xl:p-14 xl:drop-shadow-lg">
-          <div className=" flex items-center justify-between  border-b-[1px] border-dashed border-b-gray-400 py-4">
+          <section className=" flex items-center justify-between  border-b-[1px] border-dashed border-b-gray-400 py-4">
             <h3 className="text-xl font-medium">Delivery</h3>
             <button className="w-16 rounded-lg bg-gray-200 p-2 drop-shadow-md">
               Free
             </button>
-          </div>
-          <div className=" border-b-[1px] border-dashed border-b-gray-400 py-4">
+          </section>
+          <section className=" border-b-[1px] border-dashed border-b-gray-400 py-4">
             <div className="flex items-center  justify-between text-xl text-gray-900">
               <h3>Subtotal</h3>
               <span>${subTotalAmount}</span>
@@ -52,12 +52,12 @@ function Cart() {
               <h5>Tax</h5>
               <span>+ $14.00</span>
             </div>
-          </div>
-          <div className="flex justify-between py-4 text-xl">
+          </section>
+          <section className="flex justify-between py-4 text-xl">
             <h3 className="text-gray-800">Total</h3>
             <span className=" font-medium text-black">${totalAmount}</span>
-          </div>
-          <div className="flex w-full flex-col gap-4   ">
+          </section>
+          <section className="flex w-full flex-col gap-4   ">
             <button className="rounded-lg bg-indigo-500 p-2 text-lg font-medium text-gray-100 drop-shadow-lg duration-300 hover:bg-indigo-600">
               Proceed to checkout
             </button>
@@ -66,10 +66,10 @@ function Cart() {
                 Continue shopping
               </button>
             </Link>
-          </div>
+          </section>
         </article>
       </section>
-    </div>
+    </main>
   );
 }
 

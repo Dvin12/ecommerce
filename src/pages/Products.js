@@ -10,8 +10,8 @@ function Products() {
     setProducts(data.data);
   }, [data]);
   return (
-    <div className="bg-slate-200 py-2">
-      <div className=" mx-4 flex flex-col items-center justify-center sm:mx-6 xl:mx-0  ">
+    <main className="bg-slate-200 py-2">
+      <section className=" mx-4 flex flex-col items-center justify-center sm:mx-6 xl:mx-0  ">
         <h2 className="mt-8 text-3xl font-semibold  tracking-wide text-indigo-400  xl:mt-20 xl:text-5xl">
           Our Products
         </h2>
@@ -23,11 +23,11 @@ function Products() {
           laptop or a professional-grade camera, we have the perfect product for
           you at competitive prices.
         </p>
-      </div>
-      <div className="mx-4 md:mx-40 xl:mx-auto">
+      </section>
+      <section className="mx-4 md:mx-40 xl:mx-auto">
         <ProductsComponent products={products}></ProductsComponent>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 export default Products;
