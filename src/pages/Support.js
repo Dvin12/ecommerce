@@ -4,7 +4,7 @@ import { FaWhatsapp, FaTwitter, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 function Support() {
   return (
     <main className="h-full bg-slate-200 md:h-screen">
-      <section className="p-5 py-10 xl:mx-auto xl:p-28">
+      <section className="p-5 py-10 xl:mx-40 xl:py-20">
         <div className="flex flex-col items-center justify-center  xl:grid xl:grid-cols-2 xl:items-start xl:gap-40">
           <article className="flex w-full flex-col justify-center gap-6">
             <h2 className="text-center text-4xl font-semibold text-indigo-400 md:text-5xl xl:text-start">
