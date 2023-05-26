@@ -27,6 +27,7 @@ function CartItem() {
                 <img
                   className=" w-1/3  rounded-xl  bg-gray-300 p-2"
                   src={item.image}
+                  alt={item.name}
                 ></img>
                 <div className="w-full">
                   <div className="flex justify-between xl:my-4 xl:text-xl">

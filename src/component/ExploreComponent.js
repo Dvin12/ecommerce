@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { camera_header, laptop_header, lens_header } from "../assets/images";
+import { camera_header, laptop_header } from "../assets/images";
 import Buttons from "./Buttons";
 import Newsletter from "./Newsletter";
 function ExploreComponent() {
@@ -11,6 +11,7 @@ function ExploreComponent() {
             <img
               src={laptop_header}
               className=" w-full items-center drop-shadow-lg sm:w-2/3 md:w-4/6 xl:w-4/5"
+              alt="laptop"
             ></img>
           </figure>
           <article className="flex  flex-col items-center gap-2 py-4 xl:items-start ">
@@ -58,6 +59,7 @@ function ExploreComponent() {
             <img
               src={camera_header}
               className="w-3/5 drop-shadow-lg md:w-2/5"
+              alt="camera"
             ></img>
           </figure>
         </section>

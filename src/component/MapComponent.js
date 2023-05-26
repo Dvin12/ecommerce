@@ -2,6 +2,7 @@ function MapComponent() {
   return (
     <iframe
       width="100%"
+      title="map"
       height="100%"
       frameborder="0"
       scrolling="no"

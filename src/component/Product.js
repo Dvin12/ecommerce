@@ -44,6 +44,7 @@ function Product() {
           <img
             className="drop-shadow-lg xl:w-[600px]"
             src={details.image}
+            alt={details.name}
           ></img>
         </section>
         <section className="flex flex-col ">

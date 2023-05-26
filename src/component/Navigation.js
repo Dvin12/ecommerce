@@ -31,24 +31,16 @@ function Navigation() {
           }  xl:flex`}
         >
           <Link to="/products">
-            <li className=" duration-300 hover:text-indigo-600">
-              <a>Products</a>
-            </li>
+            <li className=" duration-300 hover:text-indigo-600">Products</li>
           </Link>
           <Link to="/explore">
-            <li className=" duration-300 hover:text-indigo-600">
-              <a>Explore</a>
-            </li>
+            <li className=" duration-300 hover:text-indigo-600">Explore</li>
           </Link>
           <Link to="/support">
-            <li className=" duration-300 hover:text-indigo-600">
-              <a>Support</a>
-            </li>
+            <li className=" duration-300 hover:text-indigo-600">Support</li>
           </Link>
           <Link to="/about-us">
-            <li className=" duration-300 hover:text-indigo-600">
-              <a>About Us</a>
-            </li>
+            <li className=" duration-300 hover:text-indigo-600">About Us</li>
           </Link>
         </ul>
         <section className="absolute right-0 xl:relative">
