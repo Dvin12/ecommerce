@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 function Footer() {
   return (
-    <footer className=" bg-gray-900 p-12 ">
+    <footer className="  bg-gray-900 p-12 ">
       <section className="mx-auto my-1 flex  flex-wrap items-start  justify-items-center gap-8 xl:mx-40  xl:my-10 xl:grid xl:grid-cols-4 xl:gap-0  ">
         <article className="flex  flex-col gap-2 ">
           <h3 className="text-4xl font-semibold text-white">LapLens</h3>

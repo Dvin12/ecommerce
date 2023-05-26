@@ -5,12 +5,12 @@ import Newsletter from "./Newsletter";
 function ExploreComponent() {
   return (
     <section className=" bg-slate-200 ">
-      <div className="px-4 py-20   xl:mx-20 ">
+      <div className="px-4 py-20 md:mx-8   xl:mx-20 ">
         <section className="mb-20 flex flex-col xl:grid xl:grid-cols-2  ">
           <figure className="flex items-center justify-center">
             <img
               src={laptop_header}
-              className=" w-full items-center drop-shadow-lg sm:w-2/3 md:w-5/6 xl:w-4/5"
+              className=" w-full items-center drop-shadow-lg sm:w-2/3 md:w-4/6 xl:w-4/5"
             ></img>
           </figure>
           <article className="flex  flex-col items-center gap-2 py-4 xl:items-start ">
@@ -57,7 +57,7 @@ function ExploreComponent() {
           <figure className=" flex  items-center justify-center">
             <img
               src={camera_header}
-              className="w-3/5 drop-shadow-lg md:w-3/6"
+              className="w-3/5 drop-shadow-lg md:w-2/5"
             ></img>
           </figure>
         </section>
