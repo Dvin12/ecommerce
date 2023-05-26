@@ -1,5 +1,5 @@
 import ProductsComponent from "../component/ProductsComponent";
-import ProductsCard from "../component/ProductsCard";
+
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 

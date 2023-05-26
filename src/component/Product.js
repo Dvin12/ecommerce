@@ -43,7 +43,7 @@ function Product() {
         <section className="flex items-center justify-center">
           <img
             className="drop-shadow-lg xl:w-[600px]"
-            src={details.image}
+            src={details.image} alt="product"
           ></img>
         </section>
         <section className="flex flex-col ">

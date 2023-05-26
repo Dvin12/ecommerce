@@ -32,22 +32,22 @@ function Navigation() {
         >
           <Link to="/products">
             <li className=" duration-300 hover:text-indigo-600">
-              <a>Products</a>
+              Products
             </li>
           </Link>
           <Link to="/explore">
             <li className=" duration-300 hover:text-indigo-600">
-              <a>Explore</a>
+              Explore
             </li>
           </Link>
           <Link to="/support">
             <li className=" duration-300 hover:text-indigo-600">
-              <a>Support</a>
+              Support
             </li>
           </Link>
           <Link to="/about-us">
             <li className=" duration-300 hover:text-indigo-600">
-              <a>About Us</a>
+              About Us
             </li>
           </Link>
         </ul>

@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import CartItem from "../component/CartItem";
-import { ToastContainer, toast } from "react-toastify";
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 

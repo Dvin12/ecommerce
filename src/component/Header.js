@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+
 import { camera_header, laptop_header, lens_header } from "../assets/images";
 import Buttons from "./Buttons";
 import { Link } from "react-router-dom";
@@ -25,12 +25,12 @@ function Header() {
           <img
             className="absolute left-1 top-[-10px] z-10 w-44 drop-shadow-2xl sm:left-40  md:left-28 md:top-[-40px] md:w-64 xl:left-10 xl:top-[-40px]  xl:w-[340px] "
             src={camera_header}
-            alt="camera image"
+            alt="camera "
           ></img>
           <img
             className="md: absolute h-60 w-80 drop-shadow-2xl md:h-auto md:w-3/5 xl:w-[650px] "
             src={laptop_header}
-            alt="laptop image"
+            alt="laptop "
           ></img>
           <img
             className=" absolute right-[-20px] top-[-70px] w-48 scale-100 drop-shadow-2xl sm:right-40 md:right-[120px] md:top-[-100px] md:w-60 xl:right-12  xl:top-[-120px] xl:w-[320px] "
