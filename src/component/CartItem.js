@@ -26,7 +26,7 @@ function CartItem() {
               <div className="flex flex-row gap-4">
                 <img
                   className=" w-1/3  rounded-xl  bg-gray-300 p-2"
-                  src={item.image} alt={item.name}
+                  src={item.image}
                 ></img>
                 <div className="w-full">
                   <div className="flex justify-between xl:my-4 xl:text-xl">

@@ -49,7 +49,7 @@ function ProductsCard({ product, page }) {
         <img
           src={product.image}
           className="w-fit drop-shadow-xl md:w-3/4"
-          alt={product.name}
+          alt="image of the product"
         ></img>
         <div className="flex items-center justify-around gap-16 ">
           <title className="flex flex-col gap-6">
