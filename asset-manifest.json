@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ecommerce/static/css/main.480e5d94.css",
+    "main.js": "/ecommerce/static/js/main.44ea01d1.js",
+    "static/media/lens_header.png": "/ecommerce/static/media/lens_header.190e32ce6de5305fda8f.png",
+    "static/media/laptop_header.png": "/ecommerce/static/media/laptop_header.5c7ea543ac83edeb7d66.png",
+    "static/media/camera_header.png": "/ecommerce/static/media/camera_header.a7c863937bb7b025df9c.png",
+    "index.html": "/ecommerce/index.html",
+    "main.480e5d94.css.map": "/ecommerce/static/css/main.480e5d94.css.map",
+    "main.44ea01d1.js.map": "/ecommerce/static/js/main.44ea01d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.480e5d94.css",
+    "static/js/main.44ea01d1.js"
+  ]
+}
