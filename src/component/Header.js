@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="h-full bg-slate-200 px-6 py-20 md:h-screen md:py-20 xl:p-4 ">
+    <header className="h-full bg-slate-200 px-6 py-20 md:h-screen md:py-60 xl:p-4 ">
       <section className="  mx-auto mt-40 flex  flex-col items-center justify-center gap-40 xl:mx-40 xl:my-44 xl:grid xl:grid-cols-2 xl:gap-0 ">
         <article className="order-last flex flex-col items-center  justify-center xl:order-none xl:items-start">
           <h1 className="text-center text-5xl font-semibold text-indigo-400  sm:w-2/4 md:mt-10 md:w-3/6 md:text-6xl xl:w-2/4 xl:text-start xl:text-8xl  ">

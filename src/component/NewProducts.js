@@ -10,7 +10,7 @@ function NewProducts({ products }) {
           </h2>
           <span className="mt-6 h-[3px] w-48 bg-white xl:mt-7 xl:w-80"></span>
         </title>
-        <article className="  mx-auto   flex flex-col items-center justify-center  pb-10  md:mx-[200px] xl:mx-0  xl:grid xl:grid-cols-3 xl:pb-20 xl:pt-8">
+        <article className="  mx-auto   flex flex-col items-center justify-center  pb-10  md:mx-[120px] xl:mx-0  xl:grid xl:grid-cols-3 xl:pb-20 xl:pt-8">
           {products.slice(2, 5).map((item) => (
             <ProductsCard key={item.id} product={item}></ProductsCard>
           ))}
